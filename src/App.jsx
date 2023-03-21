@@ -4,6 +4,8 @@ import ErrorPage from "./Pages/Error";
 import Home from "./Pages/Home";
 import MainLayout from "./Pages/MainLayout";
 import Publicaciones from "./Pages/Publicaciones";
+import Biblioteca from "./Pages/Biblioteca";
+import ActividadesAcademicas from "./Pages/ActividadesAcademicas";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/publicaciones",
         element: <Publicaciones />,
+      },
+      {
+        path: "/biblioteca",
+        element: <Biblioteca />,
+      },
+      {
+        path: "/actividades-academicas",
+        element: <ActividadesAcademicas />,
       },
     ],
   },
