@@ -126,7 +126,7 @@ section {
   font-size: 1.4rem;
 }
 
-@media (max-width: 80rem) {
+@media (max-width: 600px) {
   .card {
     flex-direction: column;
     width: 70vw;
@@ -137,12 +137,17 @@ section {
     height: 15rem;
   }
 }
-@media (min-width: 16rem) {
-  .carrousel {
-    margin: 0 32rem;
+@media (min-width: 601px) {
+  .card {
+    align-items: center;
   }
 
-  section {
-    margin: 2rem 32rem;
+  .card img {
+    height: 15rem;
+  }
+
+  .history,
+  .news {
+    margin: auto 24rem;
   }
 }
