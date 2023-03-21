@@ -1,0 +1,60 @@
+/*/ /////////////////////////////*/
+/*/ ///////BOOK/////////*/
+/*/ /////////////////////////////*/
+
+.librosContainer {
+  width: 55%;
+  border: 1px solid #5bb0aa;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+
+.iconContainer {
+  width: 30%;
+  text-align: center;
+}
+
+.iconLibro {
+  width: 10rem;
+  height: 10rem;
+  color: black;
+}
+
+.librosInfoContainer {
+  width: 70%;
+  text-align: center;
+}
+
+.librosInfoContainer h3 {
+  font-size: 2.6rem;
+
+  margin-bottom: 2rem;
+}
+
+.librosInfoContainer p {
+  font-size: 2rem;
+
+  margin-bottom: 1rem;
+}
+
+/*/ /////////////////////////////*/
+/*////////MEDIA QUERIES/////////*/
+/*/ /////////////////////////////*/
+@media (max-width: 1600px) {
+  .librosContainer {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .librosContainer {
+    width: 75%;
+  }
+}
