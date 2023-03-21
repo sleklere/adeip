@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Contact from "./Pages/Contact";
 import ErrorPage from "./Pages/Error";
 import Home from "./Pages/Home";
 import MainLayout from "./Pages/MainLayout";
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/publicaciones",
         element: <Publicaciones />,
+      },
+      {
+        path: "/contacto",
+        element: <Contact />,
       },
     ],
   },

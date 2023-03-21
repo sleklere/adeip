@@ -1,0 +1,48 @@
+.header {
+  /* background-color: lightseagreen; */
+  padding: 0 10%;
+  padding-top: 10px;
+}
+
+.header-title {
+  text-decoration: none;
+  color: #444;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.header-nav {
+  list-style: none;
+
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.header-nav span {
+  color: #d8d8d8;
+}
+
+.burger-button {
+  font-size: 4.5rem;
+  color: #444;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media (max-width: 710px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-nav {
+    display: none;
+  }
+}

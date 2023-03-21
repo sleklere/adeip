@@ -1,13 +1,55 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
   font-size: 62.5%;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
+:root {
+  --main-color: lightseagreen;
+}
+
+.nav-link,
+.nav-link-btn {
+  text-decoration: none;
+  color: #666;
+  font-weight: 500;
+  transition: all ease-out 0.1s;
+}
+
+.nav-link-btn,
+.nav-link-btn--pending,
+.nav-link-btn--active {
+  text-decoration: none;
+  font-family: "Futura PT";
+  font-weight: 450;
+  font-size: 3.2rem;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.nav-link--pending {
+  font-weight: 500;
+  color: #222;
+}
+
+.nav-link--active {
+  font-weight: 500;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.nav-link-btn--pending,
+.nav-link-btn--active {
+  color: var(--main-color);
 }
