@@ -1,0 +1,53 @@
+/*//////////////////////////////*/
+/*/ ///////CURSO/////////*/
+/*//////////////////////////////*/
+.curso {
+  width: 35%;
+  border: solid 1px black;
+
+  padding: 1.5rem;
+  margin-bottom: 3%;
+}
+
+.img-curso {
+  height: 40rem;
+  width: 100%;
+  border: solid 0.5px black;
+
+  margin-bottom: 1rem;
+}
+
+.ubicacion-curso {
+  text-align: center;
+  color: #9b9b9b;
+
+  margin-bottom: 1.5rem;
+}
+
+.nombre-curso {
+  margin-bottom: 2rem;
+}
+
+.info-curso {
+  font-size: 2rem;
+  text-align: center;
+
+  margin-bottom: 4rem;
+}
+
+.btn-curso-container {
+  text-align: center;
+}
+
+.btn-curso {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 50%;
+  color: white;
+  background-color: #5bb0aa;
+  border: none;
+  cursor: pointer;
+
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
