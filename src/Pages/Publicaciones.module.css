@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.titulo {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../Assets/publicaciones-2.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-bottom: 4rem;
+}
+
+.titulo h1 {
+  font-family: "Futura PT";
+  font-weight: 450;
+  color: white;
+  text-align: center;
+  font-size: 6.4rem;
+  letter-spacing: 1rem;
+}
+
+.cards {
+  margin: var(--h-margins-pc);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 7rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1500px) {
+  .cards {
+    column-gap: 2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .cards {
+    margin: var(--h-margins-mob);
+    gap: 4rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .cards {
+    gap: 2rem;
+    row-gap: 4rem;
+  }
+}
+@media (max-width: 710px) {
+  .titulo h1 {
+    font-size: 4rem;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .titulo h1 {
+    font-size: 2.4rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    margin: 0 10%;
+  }
+}

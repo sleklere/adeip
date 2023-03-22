@@ -14,6 +14,10 @@ html {
 
 :root {
   --main-color: lightseagreen;
+  --main-color-dark: rgb(28, 155, 149);
+  /* Horizontal margins for header, etc */
+  --h-margins-pc: 0 10%;
+  --h-margins-mob: 0 5%;
 }
 
 .nav-link,
@@ -52,4 +56,12 @@ html {
 .nav-link-btn--pending,
 .nav-link-btn--active {
   color: var(--main-color);
+}
+
+button {
+  font-family: "Montserrat";
+}
+
+button:hover {
+  cursor: pointer;
 }

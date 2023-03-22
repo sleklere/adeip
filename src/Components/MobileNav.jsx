@@ -14,11 +14,13 @@ function MobileNav(props) {
         >
           A.D.E.I.P
         </Link>
-        <FontAwesomeIcon
-          icon={faClose}
-          onClick={props.onMenuClose}
-          className={styles["menu-close"]}
-        />
+        {
+          <FontAwesomeIcon
+            icon={faClose}
+            onClick={props.onMenuClose}
+            className={styles["menu-close"]}
+          />
+        }
       </div>
       <ul className={styles["mobile-nav"]}>
         <li>

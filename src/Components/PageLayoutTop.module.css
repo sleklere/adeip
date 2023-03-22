@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.titulo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../Assets/publicaciones-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-bottom: 4rem;
+}
+
+.titulo h1 {
+  font-family: "Century Gothic", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 6.4rem;
+  letter-spacing: 1rem;
+}
+
+@media (max-width: 710px) {
+  .titulo h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 480px) {
+  .titulo h1 {
+    font-size: 2.4rem;
+  }
+}

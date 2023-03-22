@@ -1,7 +1,6 @@
 .header {
-  /* background-color: lightseagreen; */
-  padding: 0 10%;
-  padding-top: 10px;
+  padding: 10px 0;
+  margin: var(--h-margins-pc);
 }
 
 .header-title {
@@ -26,12 +25,19 @@
 .burger-button {
   font-size: 4.5rem;
   color: #444;
+  transition: all 0.2s;
+
+  display: none;
+}
+
+.burger-button:hover {
+  cursor: pointer;
+  color: var(--main-color);
 }
 
 @media (max-width: 1000px) {
   .header {
-    padding-left: 5%;
-    padding-right: 5%;
+    margin: var(--h-margins-mob);
   }
 }
 
@@ -44,5 +50,9 @@
 
   .header-nav {
     display: none;
+  }
+
+  .burger-button {
+    display: block;
   }
 }
