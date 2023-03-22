@@ -1,0 +1,40 @@
+.container {
+  text-align: center;
+}
+
+.carrousel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../Assets/about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-bottom: 4rem;
+}
+
+.carrousel h1 {
+  color: white;
+  text-align: center;
+  font-size: 6.4rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+h2 {
+  padding-bottom: 10px;
+
+  border-bottom: 2px solid #5bb0aa;
+  display: inline-block;
+}
+
+.section-pair {
+  margin: 2.4rem auto;
+  padding: 2.4rem 1.2rem;
+}
+
+.section-unpair {
+  padding: 2.4rem 1.2rem;
+  background-color: #f2f2f2;
+}
