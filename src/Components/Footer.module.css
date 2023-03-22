@@ -1,0 +1,99 @@
+.footer-container {
+  width: 100%;
+  height: 40rem;
+  background-color: #5bb0aa;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+.footer-part-one,
+.footer-part-two,
+.footer-part-three {
+  text-align: center;
+  width: 33, 3%;
+}
+
+/*/////////////////////*/
+/*/ /////PART ONE////////*/
+/*/////////////////////*/
+.footer-part-one h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.footer-part-one p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/*/ ////////////////////*/
+/*//////PART TWO////////*/
+/*/ ////////////////////*/
+.footer-part-two {
+  height: 100%;
+  align-self: stretch;
+}
+
+.footer-part-two h3 {
+  font-size: 2.4rem;
+  color: black;
+
+  margin-bottom: 8rem;
+}
+
+.footer-part-two p {
+  font-size: 1.8rem;
+  margin-bottom: 8rem;
+}
+
+/*/ ////////////////////*/
+/*/ /////PART THREE////////*/
+/*/ ////////////////////*/
+.footer-part-three {
+  height: 100%;
+  align-self: stretch;
+}
+
+.footer-part-three h3 {
+  font-size: 2.4rem;
+  color: black;
+
+  margin-bottom: 6rem;
+}
+
+.info-icon-footer {
+  font-size: 1.8rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon-footer {
+  margin-top: 0.2rem;
+}
+
+.footer-part-three p {
+  font-size: 1.8rem;
+
+  margin-bottom: 6rem;
+}
+
+.footer-part-three a {
+  display: block;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+
+  margin-bottom: 6rem;
+}
+
+.footer-part-three a:hover {
+  font-weight: bold;
+}

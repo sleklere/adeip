@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Components/Header";
 import MobileNav from "../Components/MobileNav";
+import Footer from "../Components/Footer";
 
 const overlays = document.getElementById("overlays");
 
@@ -26,6 +27,7 @@ function MainLayout() {
         )}
       <Header onMenuClick={showMobileNav} />
       <Outlet />
+      <Footer />
     </>
   );
 }
