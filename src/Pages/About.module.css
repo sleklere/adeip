@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.container main {
+  width: 100vw;
+}
+
 .carrousel {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../Assets/about.png");
@@ -11,7 +15,7 @@
 
   padding-top: 10%;
   padding-bottom: 10%;
-  margin-bottom: 4rem;
+  margin-bottom: 1.4rem;
 }
 
 .carrousel h1 {
@@ -22,19 +26,44 @@
   letter-spacing: 0.5rem;
 }
 
-h2 {
-  padding-bottom: 10px;
+.main h2 {
+  padding-bottom: 1rem;
+  margin-bottom: 2.8rem;
 
   border-bottom: 2px solid #5bb0aa;
   display: inline-block;
 }
 
+.main h3 {
+  margin: 2.4rem auto 1rem;
+}
+
+.section div ul li {
+  margin-bottom: 14px;
+}
+
+.section-pair div,
+.section-unpair div {
+  padding: 0 15%;
+}
+
 .section-pair {
   margin: 2.4rem auto;
-  padding: 2.4rem 1.2rem;
+  padding: 4rem 1.2rem;
+  background-color: #f2f2f2;
 }
 
 .section-unpair {
-  padding: 2.4rem 1.2rem;
-  background-color: #f2f2f2;
+  padding: 1.6rem 1.2rem;
+}
+
+.section-pair ul li,
+.section-unpair ul li {
+  list-style: none;
+  font-size: 16px;
+}
+
+.benefits p {
+  font-weight: 600;
+  font-size: 18px;
 }
