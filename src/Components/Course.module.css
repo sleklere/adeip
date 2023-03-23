@@ -51,3 +51,19 @@
   padding: 1rem;
   margin-bottom: 1.5rem;
 }
+
+/*/ /////////////////////////////*/
+/*////////MEDIA QUERIES/////////*/
+/*/ /////////////////////////////*/
+@media (max-width: 1200px) {
+  .curso {
+    width: 50rem;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .curso {
+    width: 45rem;
+  }
+}
