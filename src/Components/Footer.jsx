@@ -17,8 +17,13 @@ function Footer() {
       </div>
       <div className={styles["footer-part-two"]}>
         <h3>Miembro de</h3>
-        <p>International Test Commission (ITC)</p>
-        <p>Rorschach Society</p>
+        <div className={styles["footer-part-two-members"]}>
+          <p>
+            International Test <br />
+            Commission (ITC)
+          </p>
+          <p>Rorschach Society</p>
+        </div>
       </div>
       <div className={styles["footer-part-three"]}>
         <h3>Sede central</h3>
