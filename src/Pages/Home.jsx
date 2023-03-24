@@ -6,13 +6,15 @@ import Card3 from "../Assets/card-3.png";
 
 function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.carrousel}>
         <h1>Asociación de Estudio e Investigación en Psicodiagnóstico</h1>
       </div>
       <section className={styles.associate}>
         <div>
-          <h3>Sea miembro de A.D.E.I.P</h3>
+          <h3 className={styles["heading-terciary"]}>
+            Sea miembro de A.D.E.I.P
+          </h3>
           <a href="/" className={styles["associate-button"]}>
             Asociese
           </a>
@@ -20,7 +22,7 @@ function Home() {
       </section>
       <main>
         <section className={styles.history}>
-          <h3>Historia de ADEIP</h3>
+          <h3 className={styles["heading-terciary"]}>Historia de ADEIP</h3>
           <p>
             A.D.E.I.P. es una Asociación Civil, fundada en 1988 con el propósito
             de promover la participación, el intercambio y el nucleamiento de
@@ -32,12 +34,14 @@ function Home() {
           </a>
         </section>
         <section className={styles.news}>
-          <h3>Novedades</h3>
+          <h3 className={styles["heading-terciary"]}>Novedades</h3>
           <div className={styles.cards}>
             <div className={styles.card}>
               <img src={Card1} alt="Foto miniatura del curso" />
               <div className={styles["card-info"]}>
-                <h4>CURSO SISTEMÁTICO TEÓRICO-PRÁCTICO</h4>
+                <h4 className={styles["heading-quaternary"]}>
+                  Curso sistemático teórico-práctico
+                </h4>
                 <p>
                   Psicodiagnóstico de Rorschach sistema comprehensivo zona
                   Oeste-CABA
@@ -50,7 +54,7 @@ function Home() {
             <div className={styles.card}>
               <img src={Card2} alt="Foto miniatura del curso" />
               <div className={styles["card-info"]}>
-                <h4>
+                <h4 className={styles["heading-quaternary"]}>
                   Pandemia. Evalución del impacto en niñas, niños y adolescentes
                 </h4>
                 <p>
@@ -64,8 +68,8 @@ function Home() {
             <div className={styles.card}>
               <img src={Card3} alt="Foto miniatura del curso" />
               <div className={styles["card-info"]}>
-                <h4>
-                  Curso INTENSIVO Rorschach Sist. Comprehensivo JOHN EXNER
+                <h4 className={styles["heading-quaternary"]}>
+                  Curso intensivo Rorschach Sist. Comprehensivo John Exner
                 </h4>
                 <p>
                   Inscripciones abiertas Curso Intensivo, destinado a

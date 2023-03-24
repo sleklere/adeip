@@ -1,3 +1,7 @@
+.container main {
+  width: 70%;
+}
+
 main {
   color: #333;
 }
@@ -7,12 +11,25 @@ h3 {
   font-size: 1.6rem;
 }
 
-h4 {
+.heading-terciary {
+  font-size: 1.8rem;
+}
+
+.history h3 {
+  margin: 2.4rem auto 0;
+}
+
+.news h3 {
+  margin: 2.4rem auto 1.2rem;
+}
+
+.heading-quaternary {
   font-size: 1.4rem;
 }
 
-p {
-  font-size: 1.6rem;
+.history p,
+.news p {
+  font-size: 1.8rem;
 }
 
 section {
@@ -37,6 +54,9 @@ section {
   font-size: 6.4rem;
   letter-spacing: 0.5rem;
   text-transform: uppercase;
+
+  width: 90%;
+  margin: auto;
 }
 
 .associate {
@@ -52,7 +72,7 @@ section {
   justify-content: space-between;
 
   margin: auto;
-  width: 80%;
+  width: 70%;
 }
 
 .associate h3 {
@@ -122,9 +142,21 @@ section {
   transition: all 0.3s;
 }
 
+.card {
+  /* position: relative; */
+  margin-bottom: 2.4rem;
+}
+
+.card-info-button:link,
+.card-info-button:visited {
+  /* position: absolute;
+  right: 1%;
+  bottom: 1%; */
+  padding: 1rem 1.6rem;
+}
+
 .card-info-button,
 .associate-button {
-  padding: 1rem 1.6rem;
   font-size: 1.4rem;
 }
 
@@ -163,10 +195,5 @@ section {
 
   .card img {
     height: 15rem;
-  }
-
-  .history,
-  .news {
-    margin: auto 24rem;
   }
 }
