@@ -1,6 +1,6 @@
-import styles from "./About.module.css";
+import styles from "./SobreAdeip.module.css";
 
-function About() {
+function SobreAdeip() {
   return (
     <div className={styles.container}>
       <div className={styles.carrousel}>
@@ -139,4 +139,4 @@ function About() {
   );
 }
 
-export default About;
+export default SobreAdeip;

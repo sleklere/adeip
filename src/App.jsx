@@ -2,9 +2,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Contact from "./Pages/Contact";
 import ErrorPage from "./Pages/Error";
-import Home from "./Pages/Home";
+import Inicio from "./Pages/Inicio";
 import MainLayout from "./Pages/MainLayout";
-import About from "./Pages/About";
+import SobreAdeip from "./Pages/SobreAdeip";
+import ConsejoDirectivo from "./Pages/ConsejoDirectivo";
 import Publicaciones from "./Pages/Publicaciones";
 import Biblioteca from "./Pages/Biblioteca";
 import ActividadesAcademicas from "./Pages/ActividadesAcademicas";
@@ -17,11 +18,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Inicio />,
       },
       {
         path: "/sobre-adeip",
-        element: <About />,
+        element: <SobreAdeip />,
+      },
+      {
+        path: "/consejo-directivo",
+        element: <ConsejoDirectivo />,
       },
       {
         path: "/publicaciones",

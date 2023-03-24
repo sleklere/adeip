@@ -1,10 +1,10 @@
-import styles from "./Home.module.css";
+import styles from "./Inicio.module.css";
 
 import Card1 from "../Assets/card-1.png";
 import Card2 from "../Assets/card-2.png";
 import Card3 from "../Assets/card-3.png";
 
-function Home() {
+function Inicio() {
   return (
     <div className={styles.container}>
       <div className={styles.carrousel}>
@@ -91,4 +91,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Inicio;
