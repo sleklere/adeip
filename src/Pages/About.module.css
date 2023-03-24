@@ -3,7 +3,7 @@
 }
 
 .container main {
-  width: 100vw;
+  width: 100%;
 }
 
 .carrousel {
@@ -24,6 +24,10 @@
   font-size: 6.4rem;
   font-weight: 400;
   letter-spacing: 0.5rem;
+}
+
+.main p {
+  font-size: 1.8rem;
 }
 
 .main h2 {
@@ -60,10 +64,11 @@
 .section-pair ul li,
 .section-unpair ul li {
   list-style: none;
-  font-size: 16px;
+  font-size: 1.8rem;
 }
 
 .benefits p {
+  padding-top: 2.4rem;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
