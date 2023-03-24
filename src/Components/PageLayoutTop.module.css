@@ -25,7 +25,7 @@
   letter-spacing: 1rem;
 }
 
-@media (max-width: 710px) {
+@media (max-width: 768px) {
   .titulo h1 {
     font-size: 4rem;
   }
