@@ -86,14 +86,45 @@ main h2 {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .bibliotecaria {
     width: 60%;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  main h2 {
+    font-size: 2.4rem;
+  }
+  /*/ ///////BIBLIOTECARIA/////////*/
   .bibliotecaria {
     width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bibliotecaria {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bibliotecaria {
+    width: 90%;
+  }
+}
+
+@media (max-with: 500px) {
+  /* .titulo h1 {
+    font-size: 3rem;
+  } */
+
+  .bibliotecaria {
+    width: 100%;
+  }
+
+  .imgBibliotecaria {
+    width: 20rem;
+    height: 20rem;
   }
 }
