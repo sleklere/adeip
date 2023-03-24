@@ -34,12 +34,12 @@
   margin-bottom: 4rem;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1440px) {
   .cards {
     column-gap: 2rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .cards {
     margin: var(--h-margins-mob);
     gap: 4rem;
@@ -52,20 +52,12 @@
     row-gap: 4rem;
   }
 }
-@media (max-width: 710px) {
-  .titulo h1 {
-    font-size: 4rem;
-  }
-
+@media (max-width: 768px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
-  .titulo h1 {
-    font-size: 2.4rem;
-  }
-
   .cards {
     grid-template-columns: 1fr;
     margin: 0 10%;

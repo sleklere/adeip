@@ -15,9 +15,14 @@ html {
 :root {
   --main-color: lightseagreen;
   --main-color-dark: rgb(28, 155, 149);
+  --lightest-gray: #ebebeb;
   /* Horizontal margins for header, etc */
   --h-margins-pc: 0 10%;
   --h-margins-mob: 0 5%;
+  /* Font Colors */
+  --darkest-gray: #222;
+  --dark-gray: #444;
+  --font-regular: #666;
 }
 
 .nav-link,
@@ -56,6 +61,10 @@ html {
 .nav-link-btn--pending,
 .nav-link-btn--active {
   color: var(--main-color);
+}
+
+h1 {
+  font-family: "Century Gothic";
 }
 
 button {

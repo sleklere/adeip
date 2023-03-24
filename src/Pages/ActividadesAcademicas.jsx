@@ -5,7 +5,7 @@ function ActividadesAcademicas() {
   return (
     <div className={styles["container"]}>
       <div className={styles["titulo"]}>
-        <h1>ACTIVIDADES ACADEMICAS</h1>
+        <h1>ACTIVIDADES ACADÉMICAS</h1>
       </div>
       <main>
         <h2>Cursos</h2>
