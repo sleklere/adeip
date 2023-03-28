@@ -9,12 +9,18 @@ function Biblioteca() {
         <h1>BIBLIOTECA</h1>
       </div>
       <main>
-        <h2>Catálogo de libros</h2>
+        <h2 className={styles["heading-secondary-biblioteca"]}>
+          Catálogo de libros
+        </h2>
         <Book />
         <Book />
         <Book />
         <Book />
-        <h2 className={styles.bibliotecariaTitle}>Bibliotecaria</h2>
+        <h2
+          className={`${styles["bibliotecaria-title"]}, ${styles["heading-secondary-biblioteca"]}`}
+        >
+          Bibliotecaria
+        </h2>
         <div className={styles.bibliotecaria}>
           <div className={styles.imgBibliotecaria}></div>
           <p>Nombre:</p>

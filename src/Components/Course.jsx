@@ -10,10 +10,7 @@ function Course() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         illo accusamus porro esse deserunt sed assumenda neque minima vitae.
         Architecto amet veritatis excepturi placeat quasi ipsa cum, eveniet
-        iusto dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Qui mollitia molestiae autem earum, aspernatur sunt expedita doloribus
-        dolores velit! Vitae voluptates neque culpa omnis voluptatum illum
-        adipisci blanditiis veniam fuga.
+        iusto dolorem.
       </p>
       <div className={styles["btn-curso-container"]}>
         <button className={styles["btn-curso"]}>Mas Información</button>

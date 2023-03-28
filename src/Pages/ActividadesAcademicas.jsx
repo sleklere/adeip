@@ -8,8 +8,9 @@ function ActividadesAcademicas() {
         <h1>ACTIVIDADES ACADÉMICAS</h1>
       </div>
       <main>
-        <h2>Cursos</h2>
+        <h2 className={styles["heading-secondary-actividades"]}>Cursos</h2>
         <div className={styles["cursos-container"]}>
+          <Course />
           <Course />
           <Course />
           <Course />

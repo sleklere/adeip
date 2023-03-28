@@ -2,15 +2,15 @@
 /*/ ///////CURSO/////////*/
 /*//////////////////////////////*/
 .curso {
-  width: 35%;
+  width: 49rem;
   border: solid 1px black;
 
-  padding: 1.5rem;
+  padding: 2rem;
   margin-bottom: 3%;
 }
 
 .img-curso {
-  height: 40rem;
+  height: 30rem;
   width: 100%;
   border: solid 0.5px black;
 
@@ -18,13 +18,17 @@
 }
 
 .ubicacion-curso {
+  font-size: 1.4rem;
   text-align: center;
   color: #9b9b9b;
 
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .nombre-curso {
+  font-size: 2.4rem;
+  color: #1da099;
+
   margin-bottom: 2rem;
 }
 
@@ -32,7 +36,7 @@
   font-size: 2rem;
   text-align: center;
 
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .btn-curso-container {
@@ -44,26 +48,136 @@
   font-weight: bold;
   width: 50%;
   color: white;
-  background-color: #5bb0aa;
+  background-color: #20b2aa;
   border: none;
-  cursor: pointer;
 
   padding: 1rem;
-  margin-bottom: 1.5rem;
+}
+
+.btn-curso:hover {
+  background-color: #1a8e88;
+  cursor: pointer;
 }
 
 /*/ /////////////////////////////*/
 /*////////MEDIA QUERIES/////////*/
 /*/ /////////////////////////////*/
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   .curso {
-    width: 50rem;
-    margin-bottom: 5rem;
+    width: 45rem;
+
+    padding: 1.5rem;
+  }
+
+  .img-curso {
+    height: 28rem;
+    width: 100%;
+
+    margin-bottom: 1rem;
+  }
+
+  .ubicacion-curso {
+    font-size: 1.2rem;
+
+    margin-bottom: 1rem;
+  }
+
+  .nombre-curso {
+    font-size: 2.2rem;
+
+    margin-bottom: 2rem;
+  }
+
+  .info-curso {
+    font-size: 1.8rem;
+
+    margin-bottom: 3rem;
+  }
+
+  .btn-curso {
+    font-size: 1.8rem;
+    width: 45%;
+
+    padding: 0.8rem;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 1024px) {
   .curso {
-    width: 45rem;
+    width: 35rem;
+
+    padding: 1.3rem;
+  }
+
+  .img-curso {
+    height: 23rem;
+    width: 100%;
+
+    margin-bottom: 1rem;
+  }
+
+  .ubicacion-curso {
+    font-size: 1.2rem;
+
+    margin-bottom: 0.5rem;
+  }
+
+  .nombre-curso {
+    font-size: 2rem;
+
+    margin-bottom: 1rem;
+  }
+
+  .info-curso {
+    font-size: 1.6rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-curso {
+    font-size: 1.6rem;
+    width: 50%;
+
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .curso {
+    width: 33rem;
+
+    padding: 1.3rem;
+  }
+
+  .img-curso {
+    height: 23rem;
+    width: 100%;
+
+    margin-bottom: 1rem;
+  }
+
+  .ubicacion-curso {
+    font-size: 1rem;
+
+    margin-bottom: 0.5rem;
+  }
+
+  .nombre-curso {
+    font-size: 1.8rem;
+
+    margin-bottom: 1rem;
+  }
+
+  .info-curso {
+    font-size: 1.4rem;
+
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-curso {
+    font-size: 1.4rem;
+    width: 50%;
+
+    padding: 0.8rem;
   }
 }
