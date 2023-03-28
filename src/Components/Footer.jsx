@@ -18,27 +18,33 @@ function Footer() {
       <div className={styles["footer-part-two"]}>
         <h3>Miembro de</h3>
         <div className={styles["footer-part-two-members"]}>
-          <p>
+          <p className={styles["first-p-part-one"]}>
             International Test <br />
             Commission (ITC)
           </p>
-          <p>Rorschach Society</p>
+          <p className={styles["second-p-part-two"]}>Rorschach Society</p>
         </div>
       </div>
       <div className={styles["footer-part-three"]}>
         <h3>Sede central</h3>
-        <div className={styles["info-icon-footer"]}>
+        <div
+          className={`${styles["info-icon-footer"]} ${styles["info1-icon-footer"]}`}
+        >
           <FontAwesomeIcon
             icon={faLocationDot}
             className={styles["icon-footer"]}
           />
           <p>Rioja 1037 - Piso 4 Rosario, Argentina</p>
         </div>
-        <div className={styles["info-icon-footer"]}>
+        <div
+          className={`${styles["info-icon-footer"]} ${styles["info2-icon-footer"]}`}
+        >
           <FontAwesomeIcon icon={faPhone} className={styles["icon-footer"]} />
           <a href="tel: (0341) 424-0013">(0341) 424-0013</a>
         </div>
-        <div className={styles["info-icon-footer"]}>
+        <div
+          className={`${styles["info-icon-footer"]} ${styles["info3-icon-footer"]}`}
+        >
           <FontAwesomeIcon
             icon={faEnvelope}
             className={styles["icon-footer"]}

@@ -14,7 +14,7 @@ function Biblioteca() {
         <Book />
         <Book />
         <Book />
-        <h2 className={styles.tituloBibliotecaria}>Bibliotecaria</h2>
+        <h2 className={styles.bibliotecariaTitle}>Bibliotecaria</h2>
         <div className={styles.bibliotecaria}>
           <div className={styles.imgBibliotecaria}></div>
           <p>Nombre:</p>
