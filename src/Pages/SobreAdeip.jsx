@@ -3,7 +3,7 @@ import styles from "./SobreAdeip.module.css";
 function SobreAdeip() {
   return (
     <div className={styles.container}>
-      <div className={styles.carrousel}>
+      <div className={styles.title}>
         <h1>SOBRE ADEIP</h1>
       </div>
       <main className={styles.main}>
@@ -17,7 +17,7 @@ function SobreAdeip() {
             <p>Rama Miembro de la INTERNATIONAL RORSCHACH SOCIETY</p>
             <h3>Dirección</h3>
             <p>
-              RIOJA 1037 - PISO 4 <br /> TELEFAX (0341) 424-0013(2000) <br />{" "}
+              RIOJA 1037 - PISO 4 <br /> TELEFAX (0341) 424-0013(2000) <br />
               ROSARIO - ARGENTINA
             </p>
           </div>

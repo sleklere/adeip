@@ -1,8 +1,5 @@
 .container main {
   width: 70%;
-}
-
-main {
   color: #333;
 }
 
@@ -93,41 +90,10 @@ section {
   padding: 1rem 2rem;
 }
 
-.news {
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-}
-
-.card {
-  display: flex;
-  justify-content: space-between;
-  margin: 5px;
-  padding: 1rem;
-  background-color: #f3f3f3;
-}
-.card img {
-  height: 15rem;
-}
-
-.card-info {
-  margin: auto;
-  padding: 1.2rem 5px 0;
-}
-
-.card-info p {
-  margin: 1.2rem auto;
-}
-
 .contact-button:link,
 .contact-button:visited,
 .adeip-info-button:link,
 .adeip-info-button:visited,
-.card-info-button:link,
-.card-info-button:visited,
 .associate-button:link,
 .associate-button:visited {
   border: none;
@@ -142,27 +108,12 @@ section {
   transition: all 0.3s;
 }
 
-.card {
-  /* position: relative; */
-  margin-bottom: 2.4rem;
-}
-
-.card-info-button:link,
-.card-info-button:visited {
-  /* position: absolute;
-  right: 1%;
-  bottom: 1%; */
-  padding: 1rem 1.6rem;
-}
-
-.card-info-button,
 .associate-button {
   font-size: 1.4rem;
 }
 
 .contact-button:hover,
 .adeip-info-button:hover,
-.card-info-button:hover,
 .associate-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.075);
@@ -170,30 +121,7 @@ section {
 
 .contact-button:active,
 .adeip-info-button:active,
-.card-info-button:active,
 .associate-button:active {
   transform: translateY(-1px);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 600px) {
-  .card {
-    flex-direction: column;
-    width: 70vw;
-    margin: 1rem auto;
-  }
-
-  .card img {
-    height: 15rem;
-  }
-}
-
-@media (min-width: 601px) {
-  .card {
-    align-items: center;
-  }
-
-  .card img {
-    height: 15rem;
-  }
 }
