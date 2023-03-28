@@ -1,13 +1,13 @@
-import Book from "../Components/Book";
+import PageLayoutTop from "../Components/PageLayoutTop";
+import backgroundImage from "../Assets/biblioteca.jpg";
 
+import Book from "../Components/Book";
 import styles from "./Biblioteca.module.css";
 
 function Biblioteca() {
   return (
     <div className={styles.container}>
-      <div className={styles.titulo}>
-        <h1>BIBLIOTECA</h1>
-      </div>
+      <PageLayoutTop title={"BIBLIOTECA"} image={backgroundImage} />
       <main>
         <h2 className={styles["heading-secondary-biblioteca"]}>
           Catálogo de libros
