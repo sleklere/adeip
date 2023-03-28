@@ -1,10 +1,14 @@
 import styles from "./Inicio.module.css";
+import backgroundImage from "../Assets/home.png";
+import PageLayoutTop from "../Components/PageLayoutTop";
+
 function Inicio() {
   return (
     <div className={styles.container}>
-      <div className={styles.carrousel}>
-        <h1>Asociación de Estudio e Investigación en Psicodiagnóstico</h1>
-      </div>
+      <PageLayoutTop
+        title={"ASOCIACIÓN DE ESTUDIO E INVESTIGACIÓN EN PSICODIAGNÓSTICO"}
+        image={backgroundImage}
+      />
       <section className={styles.associate}>
         <div>
           <h3 className={styles["heading-terciary"]}>

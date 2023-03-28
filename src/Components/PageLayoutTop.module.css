@@ -14,7 +14,6 @@
 
   padding-top: 10%;
   padding-bottom: 10%;
-  margin-bottom: 4rem;
 }
 
 .titulo h1 {
@@ -33,5 +32,15 @@
 @media (max-width: 480px) {
   .titulo h1 {
     font-size: 2.4rem;
+  }
+}
+@media (max-width: 410px) {
+  .titulo h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 340px) {
+  .titulo h1 {
+    font-size: 1.4rem;
   }
 }
