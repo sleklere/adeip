@@ -1,6 +1,7 @@
 import styles from "./Inicio.module.css";
 import backgroundImage from "../Assets/home.png";
 import PageLayoutTop from "../Components/PageLayoutTop";
+import { Link } from "react-router-dom";
 
 function Inicio() {
   return (
@@ -14,9 +15,9 @@ function Inicio() {
           <h3 className={styles["heading-terciary"]}>
             Sea miembro de A.D.E.I.P
           </h3>
-          <a href="/" className={styles["associate-button"]}>
+          <Link to="/formulario-miembro" className={styles["associate-button"]}>
             Asociese
-          </a>
+          </Link>
         </div>
       </section>
       <main>
