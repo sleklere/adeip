@@ -23,6 +23,9 @@ html {
   --darkest-gray: #222;
   --dark-gray: #444;
   --font-regular: #666;
+  /* Font Sizes */
+  --paragraph-fontsize: 1.8rem;
+  --heading-secondary-fontsize: 3rem;
 }
 
 .nav-link,

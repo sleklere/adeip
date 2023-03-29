@@ -1,5 +1,8 @@
 import styles from "./ConsejoDirectivo.module.css";
-import Person from "../Assets/person.png";
+
+import Presidenta from "../Assets/presidenta-adeip.jpeg";
+import VicepresidentaPrimera from "../Assets/vicepresidenta-primera-adeip.jpeg";
+import VicepresidenteSegundo from "../Assets/person.png";
 
 function ConsejoDirectivo() {
   return (
@@ -15,62 +18,64 @@ function ConsejoDirectivo() {
       <main className={styles.main}>
         <section className={styles["charges-primary"]}>
           <div className={styles.charge}>
-            <img src={Person} alt="" />
+            <img src={Presidenta} alt="" />
             <p>Presidente</p>
-            <h3 className={styles["heading-tertiary"]}>Nombre</h3>
+            <h3 className={styles["heading-tertiary"]}>María Elena Ocampo</h3>
           </div>
           <div className={styles.charge}>
-            <img src={Person} alt="" />
-            <p>Vicepresidenta 1ra</p>
-            <h3 className={styles["heading-tertiary"]}>Nombre</h3>
+            <img src={VicepresidentaPrimera} alt="" />
+            <p>Vicepresidenta 1ª</p>
+            <h3 className={styles["heading-tertiary"]}>Ana María Bernia</h3>
           </div>
           <div className={styles.charge}>
-            <img src={Person} alt="" />
-            <p>Vicepresidenta 2da</p>
-            <h3 className={styles["heading-tertiary"]}>Nombre</h3>
-          </div>
-          <div className={styles.charge}>
-            <img src={Person} alt="" />
-            <p>Secretaria</p>
-            <h3 className={styles["heading-tertiary"]}>Nombre</h3>
-          </div>
-          <div className={styles.charge}>
-            <img src={Person} alt="" />
-            <p>Pro Secretaria</p>
-            <h3 className={styles["heading-tertiary"]}>Nombre</h3>
-          </div>
-          <div className={styles.charge}>
-            <img src={Person} alt="" />
-            <p>Tesorera</p>
-            <h3 className={styles["heading-tertiary"]}>Nombre</h3>
-          </div>
-          <div className={styles.charge}>
-            <img src={Person} alt="" />
-            <p>Pro Tesorera</p>
-            <h3 className={styles["heading-tertiary"]}>Nombre</h3>
+            <img src={VicepresidenteSegundo} alt="" />
+            <p>Vicepresidente 2º</p>
+            <h3 className={styles["heading-tertiary"]}>
+              Ernesto Federico Pais
+            </h3>
           </div>
         </section>
         <section className={styles["charges-secondary"]}>
           <div>
+            <p>Secretaria</p>
+            <h3 className={styles["heading-tertiary"]}>Silvina Cohen Imach</h3>
+          </div>
+          <div>
+            <p>Prosecretaria</p>
+            <h3 className={styles["heading-tertiary"]}>Silvina Lis García</h3>
+          </div>
+          <div>
+            <p>Tesorera</p>
+            <h3 className={styles["heading-tertiary"]}>Liliana Pernetti</h3>
+          </div>
+          <div>
+            <p>Protesorera</p>
+            <h3 className={styles["heading-tertiary"]}>María Aurelia López</h3>
+          </div>
+          <div>
             <h3 className={styles["heading-tertiary"]}>Vocales Titulares</h3>
             <p>
-              Dra. Marta Díaz de Dragotta, Lic. Beatriz Mercado, Lic. Silvina
-              Lis Garcia, Lic. Gabriela Costanza, Psic. Mirna Pontikos
+              Betria Alicia, Oscar Melillo, Ana Martos y Mula,Pontikos Mirna,
+              Falocchi Andrea
             </p>
           </div>
           <div>
             <h3 className={styles["heading-tertiary"]}>Vocales Suplentes</h3>
             <p>
-              Psic. Alicia Betria, Lic.Silvina Cohen Imach, Lic. Ernesto, Pais,
-              Lic. Ana Martos y Mula, Lic. Carolina Villalba
+              Fernando Castro, Levantini Susana, Laura Lesik,Cecilia Diez,
+              Marcelo Alé
             </p>
           </div>
           <div>
             <h3 className={styles["heading-tertiary"]}>Síndicos</h3>
             <p>
-              Psic. Ana María Bernia, Lic. Marcelo Alé, Suplente: Lic. Malena
-              Ocampo
+              Mercado Beatriz, CostanzaGabriela; <strong>Suplente:</strong>
+              Romina Colacci
             </p>
+          </div>
+          <div>
+            <h3 className={styles["heading-tertiary"]}>Past President:</h3>
+            <p>Mónica Guinzbourg</p>
           </div>
         </section>
       </main>

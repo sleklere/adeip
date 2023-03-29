@@ -24,21 +24,30 @@
   letter-spacing: 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
   .titulo h1 {
     font-size: 4rem;
   }
 }
+
+@media (max-width: 600px) {
+  .titulo h1 {
+    font-size: 3rem;
+  }
+}
+
 @media (max-width: 480px) {
   .titulo h1 {
     font-size: 2.4rem;
   }
 }
+
 @media (max-width: 410px) {
   .titulo h1 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
+
 @media (max-width: 340px) {
   .titulo h1 {
     font-size: 1.4rem;
