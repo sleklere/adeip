@@ -3,8 +3,9 @@
   color: #333;
 }
 
-h3 {
+.container h3 {
   color: #5bb0aa;
+
   font-size: 1.6rem;
 }
 

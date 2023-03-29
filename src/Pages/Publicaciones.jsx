@@ -1,7 +1,10 @@
 import styles from "./Publicaciones.module.css";
-import backgroundImage from "../Assets/publicaciones-2.jpg";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import Card from "../Components/PublicationsCard";
+
+// import backgroundImage from "../Assets/publicaciones-2.jpg";
+// import backgroundImage from "../Assets/publicaciones-3.jpg";
+// import backgroundImage from "../Assets/home-2.avif";
 
 function Publicaciones() {
   return (
@@ -16,7 +19,10 @@ function Publicaciones() {
     //   </div>
     // </div>
     <>
-      <PageLayoutTop title={"PUBLICACIONES"} image={backgroundImage} />
+      <PageLayoutTop
+        title={"PUBLICACIONES"}
+        // image={backgroundImage}
+      />
       <div className={styles.cards}>
         <Card />
         <Card />

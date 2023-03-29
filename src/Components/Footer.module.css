@@ -7,8 +7,8 @@
   align-items: center;
   justify-content: space-around;
 
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .footer-part-one,
@@ -16,6 +16,7 @@
 .footer-part-three {
   text-align: center;
   width: 33, 3%;
+  color: var(--dark-gray);
 }
 
 /*/////////////////////*/
@@ -24,6 +25,7 @@
 .footer-part-one h2 {
   font-size: 4rem;
   margin-bottom: 1rem;
+  /* color: var(--darkest-gray); */
 }
 
 .footer-part-one p {
@@ -40,7 +42,7 @@
 
 .footer-part-two h3 {
   font-size: 2.4rem;
-  color: black;
+  /* color: var(--darkest-gray); */
 
   margin-bottom: 4.5rem;
 }
@@ -67,7 +69,7 @@
 
 .footer-part-three h3 {
   font-size: 2.4rem;
-  color: black;
+  /* color: var(--darkest-gray); */
 
   margin-bottom: 4rem;
 }
@@ -96,7 +98,8 @@
   display: block;
   font-size: 1.8rem;
   text-decoration: none;
-  color: black;
+  color: var(--dark-gray);
+  transition: all 0.2s;
 }
 
 .footer-part-three a:hover {

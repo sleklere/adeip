@@ -24,6 +24,15 @@
   letter-spacing: 1rem;
 }
 
+.secondary-title {
+  margin-top: 2rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-size: 3rem;
+  font-weight: 500;
+}
+
 @media (max-width: 768px) {
   .titulo h1 {
     font-size: 4rem;

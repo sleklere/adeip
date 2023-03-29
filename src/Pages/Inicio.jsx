@@ -1,5 +1,7 @@
 import styles from "./Inicio.module.css";
-import backgroundImage from "../Assets/home.png";
+// import backgroundImage from "../Assets/home.png";
+import backgroundImage from "../Assets/home-2.avif";
+// import backgroundImage from "../Assets/home-3.jpg";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import { Link } from "react-router-dom";
 
@@ -7,9 +9,15 @@ function Inicio() {
   return (
     <div className={styles.container}>
       <PageLayoutTop
-        title={"ASOCIACIÓN DE ESTUDIO E INVESTIGACIÓN EN PSICODIAGNÓSTICO"}
+        // title={"ASOCIACIÓN DE ESTUDIO E INVESTIGACIÓN EN PSICODIAGNÓSTICO"}
+        title={"ADEIP"}
+        secondaryTitle={
+          "Asociación de Estudio e Investigación en Psicodiagnóstico"
+        }
+        titleLarge={true}
         image={backgroundImage}
       />
+
       <section className={styles.associate}>
         <div>
           <h3 className={styles["heading-terciary"]}>
