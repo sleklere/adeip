@@ -1,5 +1,6 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
-import backgroundImage from "../Assets/actividades-academicas-copia.jpg";
+// import backgroundImage from "../Assets/actividades-academicas-copia.jpg";
+// import backgroundImage from "../Assets/home-2.avif";
 
 import styles from "./ActividadesAcademicas.module.css";
 import Course from "../Components/Course";
@@ -7,7 +8,10 @@ import Course from "../Components/Course";
 function ActividadesAcademicas() {
   return (
     <div className={styles["container"]}>
-      <PageLayoutTop title={"ACTIVIDADES ACADEMICAS"} image={backgroundImage} />
+      <PageLayoutTop
+        title={"ACTIVIDADES ACADEMICAS"}
+        // image={backgroundImage}
+      />
       <main>
         <h2 className={styles["heading-secondary-actividades"]}>Cursos</h2>
         <div className={styles["cursos-container"]}>

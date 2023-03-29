@@ -3,6 +3,9 @@
   height: 100vh;
   width: 100vw;
   background-color: #ebebeb;
+  background-image: url("../Assets/polygon-bg-2-b.jpg");
+  /* background-image: url("../Assets/polygon-bg-3.jpg"); */
+  background-size: cover;
   z-index: 10;
   animation: fade-in 0.2s ease-in forwards;
   padding: 1rem 5%;
@@ -25,9 +28,12 @@
 .menu-close {
   font-size: 4.5rem;
   color: #444;
-  /* position: absolute;
-  top: 20px;
-  right: 20px; */
+  transition: all 0.2s;
+}
+
+.menu-close:hover {
+  cursor: pointer;
+  color: var(--accent-color);
 }
 
 .mobile-nav {
@@ -36,14 +42,15 @@
 
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
   font-size: 2.8rem;
 }
 
 .mobile-nav span {
   height: 1px;
-  background-color: #666;
+  background-color: #999;
   width: 70%;
+  display: none;
 }
 
 .contact-btn {

@@ -1,5 +1,7 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
-import backgroundImage from "../Assets/biblioteca.jpg";
+// import backgroundImage from "../Assets/biblioteca.jpg";
+// import backgroundImage from "../Assets/publicaciones-2.jpg";
+// import backgroundImage from "../Assets/home-2.avif";
 
 import Book from "../Components/Book";
 import styles from "./Biblioteca.module.css";
@@ -7,7 +9,10 @@ import styles from "./Biblioteca.module.css";
 function Biblioteca() {
   return (
     <div className={styles.container}>
-      <PageLayoutTop title={"BIBLIOTECA"} image={backgroundImage} />
+      <PageLayoutTop
+        title={"BIBLIOTECA"}
+        // image={backgroundImage}
+      />
       <main>
         <h2 className={styles["heading-secondary-biblioteca"]}>
           Catálogo de libros
