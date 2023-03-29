@@ -51,8 +51,11 @@ function Inicio() {
           <div className={`${styles.row} ${styles["display--flex-column"]}`}>
             <h3 className={styles["heading-tertiary"]}>Próximo Congreso</h3>
             <img src={NextCongress} alt="Próximo Congreso" />
-            <a href="/" className={`${styles.btn} ${styles["btn-contact"]}`}>
-              Contacto
+            <a
+              href="/congresos"
+              className={`${styles.btn} ${styles["btn-contact"]}`}
+            >
+              Ver Congresos Pasados
             </a>
           </div>
         </section>
