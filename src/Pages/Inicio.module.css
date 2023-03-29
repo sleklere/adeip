@@ -1,87 +1,51 @@
-.container main {
-  width: 70%;
-  color: #333;
+.heading-secondary,
+.heading-tertiary {
+  color: var(--main-color);
+  font-size: 2.2rem;
 }
 
-.container h3 {
-  color: #5bb0aa;
-
-  font-size: 1.6rem;
+.heading-secondary {
+  margin-right: 2rem;
+  font-size: 2.4rem;
 }
 
-.container .titulo {
-  margin-bottom: 0;
-}
-
-.heading-terciary {
-  font-size: 1.8rem;
-}
-
-.history h3 {
-  margin: 2.4rem auto 0;
-}
-
-.news h3 {
-  margin: 2.4rem auto 1.2rem;
-}
-
-.heading-quaternary {
-  font-size: 1.4rem;
-}
-
-.history p,
-.news p {
-  font-size: 1.8rem;
-}
-
-section {
-  margin: 2rem 0;
-}
-
-.associate {
+.section-associate {
   background-color: #f3f3f3;
-
-  padding: 2.4rem 1.2rem;
+  padding: 3rem;
   margin-top: 0;
 }
 
-.associate div {
+.section-associate div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin: auto;
-  width: 70%;
 }
 
-.associate h3 {
-  padding-right: 1rem;
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
 }
 
-.history {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  text-align: center;
-
-  gap: 1.4rem;
+.row p {
+  font-size: var(--paragraph-fontsize);
+  padding: 2.2rem;
 }
 
-.history p {
-  padding: 1rem 2rem;
+.section-history,
+.section-congress {
+  padding: 2rem 0;
 }
 
-.contact-button:link,
-.contact-button:visited,
-.adeip-info-button:link,
-.adeip-info-button:visited,
-.associate-button:link,
-.associate-button:visited {
+.section-congress img {
+  padding: 3rem;
+}
+
+.btn:link,
+.btn:visited {
   border: none;
   text-decoration: none;
   color: #fff;
-  background-color: #60bfae;
+  background-color: var(--main-color);
   margin: 1.2rem 0;
   padding: 1.8rem 4.2rem;
   font-size: 1.6rem;
@@ -90,40 +54,37 @@ section {
   transition: all 0.3s;
 }
 
-.associate-button {
-  font-size: 1.4rem;
-}
-
-.contact-button:hover,
-.adeip-info-button:hover,
-.associate-button:hover {
+.btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.075);
 }
 
-.contact-button:active,
-.adeip-info-button:active,
-.associate-button:active {
+.btn:active {
   transform: translateY(-1px);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 800px) {
-  .associate div {
-    width: 90%;
+/* Utilities */
+.display--flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/**/
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .section-congress img {
+    height: 35rem;
   }
 }
 
 @media (max-width: 480px) {
-  .titulo {
-    font-size: 1rem;
-  }
-
-  .associate div {
+  .section-associate div {
     display: block;
     text-align: center;
   }
-  .associate div h3 {
-    margin-bottom: 1.8rem;
+  .heading-secondary {
+    margin-bottom: 1.2rem;
   }
 }
