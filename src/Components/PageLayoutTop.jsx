@@ -7,7 +7,7 @@ function PageLayoutTop(props) {
       <div
         className={styles["titulo"]}
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${props.image})`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${props.image})`,
         }}
       >
         <h1>{props.title}</h1>

@@ -9,6 +9,7 @@ import ConsejoDirectivo from "./Pages/ConsejoDirectivo";
 import Publicaciones from "./Pages/Publicaciones";
 import Biblioteca from "./Pages/Biblioteca";
 import ActividadesAcademicas from "./Pages/ActividadesAcademicas";
+import Congresos from "./Pages/Congresos";
 import FormularioMiembro from "./Pages/FormularioMiembro";
 
 const router = createBrowserRouter([
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/contacto",
         element: <Contact />,
+      },
+      {
+        path: "/congresos",
+        element: <Congresos />,
       },
       {
         path: "/formulario-miembro",
