@@ -1,0 +1,43 @@
+.section-congress {
+  padding: 2rem;
+}
+
+.section-congress div {
+  max-width: 114rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading-secondary,
+.heading-tertiary {
+  color: var(--main-color);
+}
+
+.heading-secondary {
+  font-size: 3rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.section-congress div p {
+  font-size: var(--paragraph-fontsize);
+}
+
+.congresses-timeline {
+  padding: 3rem 0;
+}
+
+.congresses-timeline p:not(:last-child) {
+  margin-bottom: 2.2rem;
+}
+
+.congresses-timeline p:last-child {
+  margin-top: 1.8rem;
+  font-size: 2rem;
+  font-weight: 600;
+}

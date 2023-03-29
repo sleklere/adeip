@@ -2,7 +2,7 @@ import styles from "./Inicio.module.css";
 // import backgroundImage from "../Assets/home.png";
 import backgroundImage from "../Assets/home-2.avif";
 // import backgroundImage from "../Assets/home-3.jpg";
-import backgroundImage from "../Assets/home.png";
+// import backgroundImage from "../Assets/home.png";
 import NextCongress from "../Assets/congress-2023-adeip.png";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import { Link } from "react-router-dom";
