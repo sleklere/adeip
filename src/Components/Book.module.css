@@ -4,7 +4,9 @@
 
 .librosContainer {
   width: 95rem;
-  border: 1px solid #5bb0aa;
+  /* border: 1px solid #5bb0aa; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.25s;
 
   display: flex;
   align-items: center;
@@ -14,6 +16,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
+}
+
+.librosContainer:hover {
+  transform: scale(1.02);
 }
 
 .iconContainer {
@@ -67,9 +73,10 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .librosContainer {
     padding: 2rem;
+    margin-bottom: 3rem;
   }
 
   .iconLibro {
@@ -92,7 +99,8 @@
 
 @media (max-width: 600px) {
   .librosContainer {
-    padding: 0.5rem;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
   }
 
   .iconLibro {

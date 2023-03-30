@@ -28,7 +28,7 @@ function Inicio() {
             to="/formulario-miembro"
             className={`${styles.btn} ${styles["btn-associate"]}`}
           >
-            Asociese
+            Asóciese
           </Link>
         </div>
       </section>

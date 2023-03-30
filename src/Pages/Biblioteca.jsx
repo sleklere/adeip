@@ -13,7 +13,7 @@ function Biblioteca() {
         title={"BIBLIOTECA"}
         // image={backgroundImage}
       />
-      <main>
+      <main className={styles["main-biblioteca"]}>
         <h2 className={styles["heading-secondary-biblioteca"]}>
           Catálogo de libros
         </h2>

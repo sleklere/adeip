@@ -2,7 +2,7 @@ import styles from "./Course.module.css";
 
 function Course() {
   return (
-    <div className={styles["curso"]}>
+    <div className={styles["container-curso"]}>
       <div className={styles["img-curso"]}></div>
       <p className={styles["ubicacion-curso"]}>Ubicación del curso</p>
       <h2 className={styles["nombre-curso"]}>Nombre del Curso</h2>

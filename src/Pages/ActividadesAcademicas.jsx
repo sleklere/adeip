@@ -12,7 +12,7 @@ function ActividadesAcademicas() {
         title={"ACTIVIDADES ACADEMICAS"}
         // image={backgroundImage}
       />
-      <main>
+      <main className={styles["main-actividades"]}>
         <h2 className={styles["heading-secondary-actividades"]}>Cursos</h2>
         <div className={styles["cursos-container"]}>
           <Course />
