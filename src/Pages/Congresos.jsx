@@ -1,6 +1,7 @@
+import styles from "./Congresos.module.css";
+
 import PageLayoutTop from "../Components/PageLayoutTop";
 import backgroundImage from "../Assets/congress.jpg";
-import styles from "./Congresos.module.css";
 
 function Congresos() {
   return (

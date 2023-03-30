@@ -1,5 +1,6 @@
 .section-congress {
   padding: 2rem 0 6rem;
+  text-align: center;
 }
 
 .section-congress div {
@@ -8,6 +9,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: auto;
 }
 
 .heading-secondary,
@@ -29,7 +31,7 @@
 }
 
 .congresses-timeline {
-  padding: 3rem 0;
+  padding: 0 0 3rem;
   color: var(--darkest-gray);
 }
 
@@ -38,7 +40,7 @@
 }
 
 .congress:not(:last-child) {
-  padding-bottom: 4rem;
+  padding: 4rem 1.2rem;
   border-bottom: 1px solid var(--lightest-gray);
 }
 .congress-number {
