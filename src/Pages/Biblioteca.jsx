@@ -27,11 +27,19 @@ function Biblioteca() {
           Bibliotecaria
         </h2>
         <div className={styles.bibliotecaria}>
-          <div className={styles.imgBibliotecaria}></div>
-          <p>Nombre:</p>
-          <p>Apellido:</p>
-          <p>Teléfono:</p>
-          <p>Email:</p>
+          {/* <div className={styles.imgBibliotecaria}></div> */}
+          <p>
+            <strong>Nombre y Apellido:</strong> Miriam Testero
+          </p>
+          {/* <p>
+            <strong>Apellido:</strong> Testero
+          </p> */}
+          <p>
+            <strong>Teléfono:</strong> 1168813594
+          </p>
+          <p>
+            <strong>Email:</strong> miriamtestero@hotmail.com
+          </p>
         </div>
       </main>
     </div>

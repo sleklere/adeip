@@ -47,7 +47,7 @@ function Header(props) {
             >
               <li>
                 <NavLink
-                  to={"/sobre-adeip"}
+                  to={"/consejo-directivo"}
                   className={({ isActive, isPending }) =>
                     isPending
                       ? "nav-link--pending"
@@ -57,10 +57,40 @@ function Header(props) {
                   }
                   onClick={closeDropdown}
                 >
-                  Sobre ADEIP
+                  Consejo Directivo
                 </NavLink>
               </li>
               <li>
+                <NavLink
+                  to={"/congresos"}
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "nav-link--pending"
+                      : isActive
+                      ? "nav-link--active"
+                      : "nav-link"
+                  }
+                  onClick={closeDropdown}
+                >
+                  Congresos
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/formulario-miembro"}
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "nav-link--pending"
+                      : isActive
+                      ? "nav-link--active"
+                      : "nav-link"
+                  }
+                  onClick={closeDropdown}
+                >
+                  Afíliese a ADEIP
+                </NavLink>
+              </li>
+              {/* <li>
                 <NavLink
                   to={"/sobre-adeip"}
                   className={({ isActive, isPending }) =>
@@ -74,38 +104,8 @@ function Header(props) {
                 >
                   Sobre ADEIP
                 </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to={"/sobre-adeip"}
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? "nav-link--pending"
-                      : isActive
-                      ? "nav-link--active"
-                      : "nav-link"
-                  }
-                  onClick={closeDropdown}
-                >
-                  Sobre ADEIP
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to={"/sobre-adeip"}
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? "nav-link--pending"
-                      : isActive
-                      ? "nav-link--active"
-                      : "nav-link"
-                  }
-                  onClick={closeDropdown}
-                >
-                  Sobre ADEIP
-                </NavLink>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <NavLink
                   to={"/actividades-academicas"}
                   className={({ isActive, isPending }) =>
@@ -119,8 +119,8 @@ function Header(props) {
                 >
                   Actividades Académicas
                 </NavLink>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <NavLink
                   to={"/publicaciones"}
                   className={({ isActive, isPending }) =>
@@ -134,7 +134,7 @@ function Header(props) {
                 >
                   Publicaciones
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           )}
           <span>|</span>
