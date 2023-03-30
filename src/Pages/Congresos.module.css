@@ -1,5 +1,5 @@
 .section-congress {
-  padding: 2rem;
+  padding: 2rem 0 6rem;
 }
 
 .section-congress div {
@@ -30,13 +30,31 @@
 
 .congresses-timeline {
   padding: 3rem 0;
+  color: var(--darkest-gray);
 }
 
-.congresses-timeline p:not(:last-child) {
-  margin-bottom: 2.2rem;
+.congress {
+  margin: 2rem auto;
 }
 
-.congresses-timeline p:last-child {
+.congress:not(:last-child) {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--lightest-gray);
+}
+.congress-number {
+  font-weight: 600;
+}
+
+.congress-name {
+  font-weight: 500;
+  margin: 1rem auto;
+}
+
+.congress-date {
+  font-weight: 300;
+}
+
+.first-congress {
   margin-top: 1.8rem;
   font-size: 2rem;
   font-weight: 600;
