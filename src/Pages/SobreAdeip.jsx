@@ -14,13 +14,13 @@ function SobreAdeip() {
       <main className={styles.main}>
         <section className={`${styles.section} ${styles["section-unpair"]}`}>
           <div>
-            <h2>Sede Nacional</h2>
-            <p>
+            <h2 className={styles["heading-secondary"]}>Sede Nacional</h2>
+            <p className={styles["margin-bottom--small"]}>
               ASOCIACIÓN ARGENTINA DE ESTUDIO E INVESTIGACIÓN EN
               PSICODIAGNÓSTICO
             </p>
             <p>Rama Miembro de la INTERNATIONAL RORSCHACH SOCIETY</p>
-            <h3>Dirección</h3>
+            <h3 className={styles["heading-tertiary"]}>Dirección</h3>
             <p>
               RIOJA 1037 - PISO 4 <br /> TELEFAX (0341) 424-0013(2000) <br />
               ROSARIO - ARGENTINA
@@ -29,7 +29,7 @@ function SobreAdeip() {
         </section>
         <section className={`${styles.section} ${styles["section-pair"]}`}>
           <div>
-            <h2>Fundación</h2>
+            <h2 className={styles["heading-secondary"]}>Fundación</h2>
             <p>
               A.D.E.I.P ES ASOCIACION CIVIL CON PERSONERIA JURÍDICA Nº 16.917
             </p>
@@ -42,7 +42,7 @@ function SobreAdeip() {
         </section>
         <section className={`${styles.section} ${styles["section-unpair"]}`}>
           <div>
-            <h2>Propósitos</h2>
+            <h2 className={styles["heading-secondary"]}>Propósitos</h2>
             <ul>
               <li>
                 Promover la participación, el intercambio y el nucleamiento de
@@ -80,11 +80,11 @@ function SobreAdeip() {
         </section>
         <section className={`${styles.section} ${styles["section-pair"]}`}>
           <div className={styles.benefits}>
-            <h2>Beneficios</h2>
+            <h2 className={styles["heading-secondary"]}>Beneficios</h2>
             <ul>
               <li>
-                Tres boletines al año con información y publicación científica
-                (GRATUITO PARA SOCIOS)
+                Boletines periódicos con información institucional actualizada y
+                publicación de artículos científicos (GRATUITO PARA SOCIOS)
               </li>
               <li>
                 Congreso anual en distintas zonas del país (CON INSCRIPCIÓN
@@ -95,47 +95,42 @@ function SobreAdeip() {
                 Jornadas , cursos, simposium, seminarios, mesas redondas y
                 talleres
               </li>
-              <li>Grupos de investigación supervisados por especialistas</li>
+              <li>
+                Grupos de intercambio sobre el psicodiagnóstico en distintas
+                áreas de aplicación
+              </li>
               <li>Supervisiones en distintas áreas</li>
-              <p>
-                ESTAS ACTIVIDADES SE REALIZAN EN TODO EL PAIS Y SON GRATUITAS O
-                CON ARANCELES DIFERENCIADOS PARA SOCIOS
-              </p>
             </ul>
           </div>
         </section>
         <section className={`${styles.section} ${styles["section-unpair"]}`}>
           <div>
-            <h2>Estructura Organizativa</h2>
-            <p>Consejo Directivo y Delegaciones</p>
-            <p>Editor y Comité editorial revista “PSICODIAGNOSTICAR”</p>
-            <h3>Comisiones</h3>
-            <ul>
+            <h2 className={styles["heading-secondary"]}>
+              Estructura Organizativa
+            </h2>
+            <p className={styles["margin-bottom--small"]}>
+              Consejo Directivo y Delegaciones
+            </p>
+            <p>Editor y Comité editorial de revista “PSICODIAGNOSTICAR”</p>
+            <h3 className={styles["heading-tertiary"]}>Comisiones</h3>
+            <ul className={styles.comissions}>
               <li>Comisión Docencia</li>
-              <li>Comisión de Investigación</li>
-              <li>Comisión Internacional</li>
-              <li>Consejo Deontológico</li>
               <li>Consejo Asesor</li>
             </ul>
           </div>
         </section>
         <section className={`${styles.section} ${styles["section-pair"]}`}>
           <div>
-            <h2>Actividades</h2>
+            <h2 className={styles["heading-secondary"]}>Actividades</h2>
             <ul>
               <li>Congreso nacional anual</li>
               <li>Jornadas nacionales y de las delegaciones</li>
               <li>Seminarios, cursos, conferencias</li>
               <li>Intercambios regionales</li>
-              <li>Publicaciones -revista anual “PSICODIAGNOSTICAR”</li>
-              <li>Boletín informativo</li>
-              <li>cuatrimestral.</li>
               <li>
-                Banco de documentación bibliográfica Suscripción a revistas
-                extranjeras
+                Publicaciones: Boletín informativo periódico, revista anual
+                “PSICODIAGNOSTICAR”, y otros.
               </li>
-              <li>Convenios de intercambio con universidades</li>
-              <li>Convenios con instituciones extranjeras</li>
             </ul>
           </div>
         </section>
