@@ -8,6 +8,8 @@ function HeaderDropdown(props) {
     styles["dropdown-menu"],
     props.show === "entering"
       ? styles["dropdown-open"]
+      : props.show === "entered"
+      ? styles["dropdown-open"]
       : props.show === "exiting"
       ? styles["dropdown-closed"]
       : null,
@@ -18,7 +20,7 @@ function HeaderDropdown(props) {
       ref={props.transitionRef}
       className={classes.join(" ")}
       onMouseEnter={props.openMenu}
-      onMouseLeave={props.closeMenu}
+      // onMouseLeave={props.closeMenu}
     >
       <NavLink
         to={"/consejo-directivo"}
