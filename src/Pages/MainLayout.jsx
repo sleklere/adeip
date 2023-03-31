@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import Header from "../Components/Header";
 import MobileNav from "../Components/MobileNav";
 import Footer from "../Components/Footer";
+import ScrollToTop from "../Components/ScrollToTop";
 
 const overlays = document.getElementById("overlays");
 
@@ -20,6 +21,7 @@ function MainLayout() {
 
   return (
     <>
+      <ScrollToTop />
       {mobNavVisible &&
         ReactDOM.createPortal(
           <MobileNav onMenuClose={hideMobileNav} />,

@@ -46,9 +46,10 @@
 
   h1.title-large {
     font-size: 7rem;
+    display: none;
   }
 
   .secondary-title {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }

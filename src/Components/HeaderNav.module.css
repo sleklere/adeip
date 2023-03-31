@@ -5,7 +5,11 @@
   margin-top: 1rem;
 }
 
-.header-nav-list li {
+/* .header-nav-list li {
+  padding-bottom: 15px;
+} */
+
+.header-nav-list a {
   padding-bottom: 15px;
 }
 
@@ -54,4 +58,10 @@
 
 .chevron-down {
   font-size: 1.4rem;
+}
+
+@media (max-width: 1024px) {
+  .header-nav-list {
+    gap: 5px;
+  }
 }

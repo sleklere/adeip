@@ -18,11 +18,11 @@ function HeaderNav() {
   return (
     <nav>
       <ul className={styles["header-nav-list"]}>
-        <li>
-          <NavLink to={"/"} className={navLinkFn}>
-            Inicio
-          </NavLink>
-        </li>
+        {/* <li> */}
+        <NavLink to={"/"} className={navLinkFn}>
+          Inicio
+        </NavLink>
+        {/* </li> */}
         <span>|</span>
         <li
           onMouseEnter={openDropdown}
@@ -54,29 +54,29 @@ function HeaderNav() {
           </Transition>
           <span>|</span>
         </li>
-        <li>
-          <NavLink to={"/actividades-academicas"} className={navLinkFn}>
-            Actividades Académicas
-          </NavLink>
-        </li>
+        {/* <li> */}
+        <NavLink to={"/actividades-academicas"} className={navLinkFn}>
+          Actividades Académicas
+        </NavLink>
+        {/* </li> */}
         <span>|</span>
-        <li>
-          <NavLink to={"/publicaciones"} className={navLinkFn}>
-            Publicaciones
-          </NavLink>
-        </li>
+        {/* <li> */}
+        <NavLink to={"/publicaciones"} className={navLinkFn}>
+          Publicaciones
+        </NavLink>
+        {/* </li> */}
         <span>|</span>
-        <li>
-          <NavLink to={"/biblioteca"} className={navLinkFn}>
-            Biblioteca
-          </NavLink>
-        </li>
+        {/* <li> */}
+        <NavLink to={"/biblioteca"} className={navLinkFn}>
+          Biblioteca
+        </NavLink>
+        {/* </li> */}
         <span>|</span>
-        <li>
-          <NavLink to={"/contacto"} className={navLinkFn}>
-            Contacto
-          </NavLink>
-        </li>
+        {/* <li> */}
+        <NavLink to={"/contacto"} className={navLinkFn}>
+          Contacto
+        </NavLink>
+        {/* </li> */}
       </ul>
     </nav>
   );

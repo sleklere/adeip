@@ -17,7 +17,7 @@
 
 .dropdown-menu a {
   list-style: none;
-  padding: 7px 5px;
+  padding: 7px 5px !important;
   border-bottom: 1px solid var(--lightest-gray);
   white-space: nowrap;
 }
