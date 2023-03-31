@@ -8,7 +8,7 @@ function Header(props) {
   return (
     <div className={styles.header}>
       <Link to={"/"} className={styles["header-title"]}>
-        A.D.E.I.P
+        ADEIP
       </Link>
       <HeaderNav />
       <FontAwesomeIcon
