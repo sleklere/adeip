@@ -9,7 +9,7 @@ function ActividadesAcademicas() {
   return (
     <div className={styles["container"]}>
       <PageLayoutTop
-        title={"ACTIVIDADES ACADEMICAS"}
+        title={"ACTIVIDADES ACADÉMICAS"}
         // image={backgroundImage}
       />
       <main className={styles["main-actividades"]}>

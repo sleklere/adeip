@@ -1,0 +1,8 @@
+.sub-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  gap: 2rem;
+  animation: fade-in 0.4s ease-in forwards;
+}

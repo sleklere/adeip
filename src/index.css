@@ -31,7 +31,6 @@ html {
 
 .nav-link,
 .nav-link-btn {
-  text-decoration: none;
   color: #666;
   /* color: #444; */
   font-weight: 500;
@@ -41,7 +40,6 @@ html {
 .nav-link-btn,
 .nav-link-btn--pending,
 .nav-link-btn--active {
-  text-decoration: none;
   font-family: "Futura PT";
   font-weight: 500;
   font-size: 3.2rem;
@@ -63,7 +61,6 @@ html {
   color: var(--main-color);
   /* color: rgb(224, 127, 17); */
   /* color: var(--accent-color); */
-  text-decoration: none;
 }
 
 .nav-link-btn--pending,
@@ -72,14 +69,81 @@ html {
   /* color: var(--accent-color); */
 }
 
+.fade-slide-enter {
+  opacity: 1;
+}
+.fade-slide-enter-active {
+  animation: fade-in 0.2s ease-in forwards;
+}
+.fade-slide-exit {
+  opacity: 0;
+}
+.fade-slide-exit-active {
+  animation: fade-out 0.2s ease-in forwards;
+}
+
+.rotate-arrow-enter-active {
+  transform: rotate(90deg);
+}
+.rotate-arrow-enter {
+  transform: rotate(90deg);
+}
+.rotate-arrow-exit-active {
+  transform: rotate(0);
+}
+
+.rotate-arrow-enter-done {
+  transform: rotate(90deg);
+}
+.rotate-arrow-exit {
+  transform: rotate(0);
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}
+
 h1 {
   font-family: "Century Gothic";
 }
 
 button {
   font-family: "Montserrat";
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: all 0.2s;
+  border: none;
+  padding: 1rem;
 }
 
 button:hover {
   cursor: pointer;
+  background-color: var(--main-color-dark);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }

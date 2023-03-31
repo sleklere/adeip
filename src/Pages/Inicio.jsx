@@ -42,21 +42,24 @@ function Inicio() {
               nucleamiento de los profesionales de todo el país Interesados en
               el psicodiagnóstico.
             </p>
-            <a href="/" className={`${styles.btn} ${styles["btn-adeip-info"]}`}>
+            <Link
+              toz="/"
+              className={`${styles.btn} ${styles["btn-adeip-info"]}`}
+            >
               Más Información
-            </a>
+            </Link>
           </div>
         </section>
         <section className={styles["section-congress"]}>
           <div className={`${styles.row} ${styles["display--flex-column"]}`}>
             <h3 className={styles["heading-tertiary"]}>Próximo Congreso</h3>
             <img src={NextCongress} alt="Próximo Congreso" />
-            <a
-              href="/congresos"
+            <Link
+              to="/congresos"
               className={`${styles.btn} ${styles["btn-contact"]}`}
             >
               Ver Congresos Pasados
-            </a>
+            </Link>
           </div>
         </section>
       </main>

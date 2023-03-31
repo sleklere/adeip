@@ -51,14 +51,14 @@
 
 .btn-curso {
   font-size: 2rem;
-  font-weight: bold;
+  /* font-weight: bold; */
   width: 50%;
-  color: white;
+  /* color: white;
   background-color: #20b2aa;
   border: none;
   transition: all 0.5s;
 
-  padding: 1rem;
+  padding: 1rem; */
 }
 
 .btn-curso:hover {

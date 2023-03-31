@@ -10,12 +10,14 @@ function PageLayoutTop(props) {
         className={styles["titulo"]}
         style={{
           // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${props.image})`,
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(${
             props.image || bgImage
           })`,
         }}
       >
-        <h1 style={props.titleLarge && { fontSize: "10rem" }}>{props.title}</h1>
+        <h1 className={props.titleLarge && styles["title-large"]}>
+          {props.title}
+        </h1>
         {props.secondaryTitle && (
           <h2 className={styles["secondary-title"]}>{props.secondaryTitle}</h2>
         )}

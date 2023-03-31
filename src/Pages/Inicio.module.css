@@ -13,6 +13,7 @@
   background-color: #f3f3f3;
   padding: 3rem;
   margin-top: 0;
+  margin-bottom: 4rem;
 }
 
 .section-associate div {
@@ -35,6 +36,7 @@
 .section-history,
 .section-congress {
   padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .section-congress img {
@@ -44,7 +46,6 @@
 .btn:link,
 .btn:visited {
   border: none;
-  text-decoration: none;
   color: #fff;
   background-color: var(--main-color);
   margin: 1.2rem 0;
