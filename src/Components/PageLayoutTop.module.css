@@ -5,6 +5,8 @@
 .titulo {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
     url("../Assets/publicaciones-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("../Assets/page-layout-top.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;

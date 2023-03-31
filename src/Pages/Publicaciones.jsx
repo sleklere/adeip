@@ -3,7 +3,8 @@ import PageLayoutTop from "../Components/PageLayoutTop";
 import Card from "../Components/PublicationsCard";
 
 // import backgroundImage from "../Assets/publicaciones-2.jpg";
-import backgroundImage from "../Assets/publicaciones-3.jpg";
+// import backgroundImage from "../Assets/publicaciones-3.jpg";
+import backgroundImage from "../Assets/page-layout-top.jpg";
 // import backgroundImage from "../Assets/home-2.avif";
 
 function Publicaciones() {

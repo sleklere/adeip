@@ -1,5 +1,6 @@
 import styles from "./PublicationsCard.module.css";
 import cardImage from "../Assets/publicaciones-card.jpg";
+// import cardImage from "../Assets/publicaciones-card-2.jpg";
 
 function Card() {
   return (

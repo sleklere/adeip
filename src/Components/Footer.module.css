@@ -54,7 +54,7 @@
 }
 
 .first-p-part-one {
-  margin-bottom: 4.5rem;
+  margin-bottom: 2.4rem;
 }
 
 .second-p-part-two {
@@ -98,7 +98,7 @@
 }
 
 .info1-icon-footer {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .footer-part-three a {
@@ -114,7 +114,7 @@
 }
 
 .info2-icon-footer {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .info3-icon-footer {
@@ -125,6 +125,10 @@
 /*/ /////MEDIA QUERIES////////*/
 /*/ ////////////////////*/
 @media (max-width: 1024px) {
+  .footer-container {
+    padding: 8rem 5%;
+  }
+
   /*/ /////PART ONE////////*/
   .footer-part-one h2 {
     font-size: 3.6rem;

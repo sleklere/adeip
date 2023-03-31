@@ -1,5 +1,5 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
-import backgroundImage from "../Assets/formulario-miembro.jpg";
+// import backgroundImage from "../Assets/formulario-miembro.jpg";
 import styles from "./FormularioMiembro.module.css";
 
 function FormularioMiembro() {
@@ -7,7 +7,7 @@ function FormularioMiembro() {
     <>
       <PageLayoutTop
         title={"SOLICITUD DE INGRESO COMO MIEMBRO"}
-        image={backgroundImage}
+        // image={backgroundImage}
       />
       <form className={styles.form}>
         <label>

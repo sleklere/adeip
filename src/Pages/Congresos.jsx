@@ -1,12 +1,15 @@
 import styles from "./Congresos.module.css";
 
 import PageLayoutTop from "../Components/PageLayoutTop";
-import backgroundImage from "../Assets/congress.jpg";
+// import backgroundImage from "../Assets/congress.jpg";
 
 function Congresos() {
   return (
     <>
-      <PageLayoutTop title={"CONGRESOS"} image={backgroundImage} />
+      <PageLayoutTop
+        title={"CONGRESOS"}
+        // image={backgroundImage}
+      />
       <main className={styles.main}>
         <section className={styles["section-congress"]}>
           <div>
