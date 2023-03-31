@@ -31,6 +31,7 @@
 .row p {
   font-size: var(--paragraph-fontsize);
   padding: 2.2rem;
+  padding-bottom: 3.6rem;
 }
 
 .section-history,
@@ -43,8 +44,8 @@
   padding: 3rem;
 }
 
-.btn:link,
-.btn:visited {
+.btn-associate:link,
+.btn-associate:visited {
   border: none;
   color: #fff;
   background-color: var(--main-color);
@@ -56,14 +57,30 @@
   transition: all 0.3s;
 }
 
-.btn:hover {
+.btn-associate:hover {
   transform: translateY(-3px);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.075);
 }
 
-.btn:active {
+.btn-associate:active {
   transform: translateY(-1px);
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.btn:link,
+.btn:visited {
+  background-color: var(--main-color);
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: all 0.2s;
+  border: none;
+  padding: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #1a8e88;
+  cursor: pointer;
 }
 
 /* Utilities */

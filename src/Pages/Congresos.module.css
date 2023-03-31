@@ -19,6 +19,7 @@
 
 .heading-secondary {
   font-size: 3rem;
+  padding: 0 1.6rem;
 }
 
 .heading-tertiary {
@@ -57,7 +58,25 @@
 }
 
 .first-congress {
-  margin-top: 1.8rem;
+  margin-top: 4rem;
   font-size: 2rem;
   font-weight: 600;
+}
+
+@media (max-width: 850px) {
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+  .heading-tertiary {
+    font-size: 1.6rem;
+  }
 }

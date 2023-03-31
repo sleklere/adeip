@@ -15,61 +15,45 @@
 .heading-tertiary {
   font-size: 2rem;
   font-weight: 500;
-}
-
-.heading-quaternary {
-  font-size: 2rem;
-  font-weight: 600;
   color: var(--main-color);
 }
 
 .main {
-  max-width: 114rem;
   margin: auto;
-  padding: 1.8rem 1.2rem 6rem;
+  padding: 0 0 4rem;
 }
 
-.charges-primary {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.charges {
+  text-align: center;
 }
 
 .charge {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 4.8rem;
-  gap: 5rem;
+  padding: 3.2rem 0;
 }
 
-.charge img {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-}
-
-.charge-info {
-  text-align: center;
+.charge:first-child {
+  padding-top: 1rem;
 }
 
 .charge p {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
-  color: var(--main-color);
+  padding-top: 1rem;
+  color: #444;
 }
 
-.charges-secondary {
-  text-align: center;
+.charge-pair {
+  background-color: #f5f5f5;
 }
 
-.charges-secondary div:not(:last-child) {
-  margin-bottom: 5rem;
+@media (max-width: 850px) {
+  .heading-secondary {
+    font-size: 2.2rem;
+  }
 }
 
-.charges-secondary p {
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 500;
+@media (max-width: 600px) {
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
 }

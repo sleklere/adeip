@@ -24,10 +24,7 @@ function Inicio() {
           <h2 className={styles["heading-secondary"]}>
             Sea miembro de A.D.E.I.P
           </h2>
-          <Link
-            to="/formulario-miembro"
-            className={`${styles.btn} ${styles["btn-associate"]}`}
-          >
+          <Link to="/formulario-miembro" className={styles["btn-associate"]}>
             Asóciese
           </Link>
         </div>
