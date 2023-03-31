@@ -16,7 +16,7 @@
 .footer-part-three {
   text-align: center;
   width: 33, 3%;
-  color: var(--dark-gray);
+  /* color: var(--dark-gray); */
   color: #333;
 }
 
@@ -58,6 +58,11 @@
 
 .second-p-part-two {
   margin-bottom: 0;
+}
+
+.member-of-link {
+  text-decoration: none;
+  color: #333;
 }
 
 /*/ ////////////////////*/

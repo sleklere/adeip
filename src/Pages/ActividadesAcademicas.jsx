@@ -19,6 +19,8 @@ function ActividadesAcademicas() {
           <Course />
           <Course />
           <Course />
+          <Course />
+          <Course />
         </div>
       </main>
     </div>

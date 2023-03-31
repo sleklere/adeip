@@ -19,10 +19,26 @@ function Footer() {
         <h3>Miembro de</h3>
         <div className={styles["footer-part-two-members"]}>
           <p className={styles["first-p-part-one"]}>
-            International Test <br />
-            Commission (ITC)
+            <a
+              href="https://www.intestcom.org/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles["member-of-link"]}
+            >
+              International Test <br />
+              Commission (ITC)
+            </a>
           </p>
-          <p className={styles["second-p-part-two"]}>Rorschach Society</p>
+          <p className={styles["second-p-part-two"]}>
+            <a
+              href="https://www.internationalrorschachsociety.com/"
+              target="_blank"
+              rel="noreferrer"
+              className={styles["member-of-link"]}
+            >
+              Rorschach Society
+            </a>{" "}
+          </p>
         </div>
       </div>
       <div className={styles["footer-part-three"]}>
