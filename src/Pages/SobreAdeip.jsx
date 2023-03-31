@@ -1,13 +1,16 @@
 import styles from "./SobreAdeip.module.css";
 // import backgroundImage from "../Assets/about.png";
-import backgroundImage from "../Assets/about-2.jpg";
+// import backgroundImage from "../Assets/about-2.jpg";
 // import backgroundImage from "../Assets/home-2.avif";
 import PageLayoutTop from "../Components/PageLayoutTop";
 
 function SobreAdeip() {
   return (
     <div className={styles.container}>
-      <PageLayoutTop title={"SOBRE ADEIP"} image={backgroundImage} />
+      <PageLayoutTop
+        title={"SOBRE ADEIP"}
+        // image={backgroundImage}
+      />
       <main className={styles.main}>
         <section className={`${styles.section} ${styles["section-unpair"]}`}>
           <div>
