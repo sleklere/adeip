@@ -6,7 +6,7 @@ import navLinkFn from "../Utils/navLinkFunction";
 import { CSSTransition } from "react-transition-group";
 
 import navBg from "../Assets/polygon-bg-3.jpg";
-import MobileNavDropdown from "./MobileNavDropdown";
+// import MobileNavDropdown from "./MobileNavDropdown";
 import { useRef, useState } from "react";
 
 function MobileNav(props) {
