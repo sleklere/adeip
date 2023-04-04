@@ -12,7 +12,7 @@ function ConsejoDirectivo() {
       />
       <div className={styles.title}>
         <h2 className={styles["heading-secondary"]}>
-          Consejo Directivo A.D.E.I.P 2022-2023
+          Consejo Directivo ADEIP 2022-2023
         </h2>
       </div>
       <main className={styles.main}>

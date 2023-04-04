@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className={styles["footer-container"]}>
       <div className={styles["footer-part-one"]}>
-        <h2>A.D.E.I.P.</h2>
+        <h2>ADEIP.</h2>
         <p>
           Asociación Civil Personería <br /> Jurídica Nº 16.917
         </p>

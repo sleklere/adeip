@@ -19,7 +19,7 @@ function MobileNav(props) {
           className={styles["nav-title"]}
           onClick={props.onMenuClose}
         >
-          A.D.E.I.P
+          ADEIP
         </Link>
         {
           <FontAwesomeIcon

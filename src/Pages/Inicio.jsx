@@ -21,9 +21,7 @@ function Inicio() {
       />
       <section className={styles["section-associate"]}>
         <div className={styles.row}>
-          <h2 className={styles["heading-secondary"]}>
-            Sea miembro de A.D.E.I.P
-          </h2>
+          <h2 className={styles["heading-secondary"]}>Sea miembro de ADEIP</h2>
           <Link to="/formulario-miembro" className={styles["btn-associate"]}>
             Asóciese
           </Link>
@@ -34,10 +32,10 @@ function Inicio() {
           <div className={styles.row}>
             <h3 className={styles["heading-tertiary"]}>Historia de ADEIP</h3>
             <p>
-              A.D.E.I.P. es una Asociación Civil, fundada en 1988 con el
-              propósito de promover la participación, el intercambio y el
-              nucleamiento de los profesionales de todo el país Interesados en
-              el psicodiagnóstico.
+              ADEIP. es una Asociación Civil, fundada en 1988 con el propósito
+              de promover la participación, el intercambio y el nucleamiento de
+              los profesionales de todo el país Interesados en el
+              psicodiagnóstico.
             </p>
             <Link
               toz="/"

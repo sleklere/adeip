@@ -30,9 +30,7 @@ function SobreAdeip() {
         <section className={`${styles.section} ${styles["section-pair"]}`}>
           <div>
             <h2 className={styles["heading-secondary"]}>Fundación</h2>
-            <p>
-              A.D.E.I.P ES ASOCIACION CIVIL CON PERSONERIA JURÍDICA Nº 16.917
-            </p>
+            <p>ADEIP ES ASOCIACION CIVIL CON PERSONERIA JURÍDICA Nº 16.917</p>
             <br />
             <p>
               FUNDADA EL 18 DE SETIEMBRE DE 1988, EN SAN MIGUEL DE TUCUMAN,
