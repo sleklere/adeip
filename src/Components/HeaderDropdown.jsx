@@ -9,7 +9,7 @@ function HeaderDropdown(props) {
     props.show === "entering"
       ? styles["dropdown-open"]
       : props.show === "entered"
-      ? styles["dropdown-open"]
+      ? styles["dropdown-opened"]
       : props.show === "exiting"
       ? styles["dropdown-closed"]
       : null,

@@ -58,6 +58,7 @@
 
 .chevron-down {
   font-size: 1.4rem;
+  transition: all 0.2s;
 }
 
 @media (max-width: 1024px) {

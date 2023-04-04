@@ -10,6 +10,13 @@ body {
 
 html {
   font-size: 62.5%;
+
+  --s: 700px; /* control the size*/
+  --c1: #fff;
+  --c2: #e6e6e6;
+  --c3: #c6c6c6;
+
+  --_g: 0 120deg, #0000 0;
 }
 
 :root {
@@ -83,20 +90,32 @@ html {
 }
 
 .rotate-arrow-enter-active {
+  /* animation: rotate90 0.1s ease-in forwards; */
   transform: rotate(90deg);
-}
-.rotate-arrow-enter {
-  transform: rotate(90deg);
-}
-.rotate-arrow-exit-active {
-  transform: rotate(0);
 }
 
 .rotate-arrow-enter-done {
   transform: rotate(90deg);
 }
-.rotate-arrow-exit {
+
+.rotate-arrow-exit-active {
+  /* animation: rotate0 0.1s ease-in forwards; */
   transform: rotate(0);
+}
+
+.rotate-arrow-exit-done {
+  transform: rotate(0);
+}
+@keyframes rotate90 {
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate0 {
+  to {
+    transform: rotate(0);
+  }
 }
 
 @keyframes fade-in {

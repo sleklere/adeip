@@ -4,9 +4,6 @@ import { Link, NavLink } from "react-router-dom";
 import styles from "./MobileNav.module.css";
 import navLinkFn from "../Utils/navLinkFunction";
 import { CSSTransition } from "react-transition-group";
-
-import navBg from "../Assets/polygon-bg-3.jpg";
-// import MobileNavDropdown from "./MobileNavDropdown";
 import { useRef, useState } from "react";
 
 function MobileNav(props) {
@@ -133,7 +130,7 @@ function MobileNav(props) {
           </li>
         </ul>
       </nav>
-      <img src={navBg} alt={"Mobile navigation background"} />
+      {/* <img src={navBg} alt={"Mobile navigation background"} /> */}
     </div>
   );
 }

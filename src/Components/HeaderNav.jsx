@@ -1,8 +1,8 @@
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Transition } from "react-transition-group";
+import { CSSTransition, Transition } from "react-transition-group";
 import navLinkFn from "../Utils/navLinkFunction";
 import HeaderDropdown from "./HeaderDropdown";
 
@@ -10,6 +10,7 @@ import styles from "./HeaderNav.module.css";
 
 function HeaderNav() {
   const nodeRef = useRef(null);
+  const nodeRef2 = useRef(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const openDropdown = () => setIsDropdownOpen(true);
@@ -31,10 +32,25 @@ function HeaderNav() {
         >
           <NavLink to={"/sobre-adeip"} className={navLinkFn}>
             Sobre ADEIP{" "}
-            <FontAwesomeIcon
+            {/* <FontAwesomeIcon
               icon={faChevronDown}
               className={styles["chevron-down"]}
-            />
+            /> */}
+            <CSSTransition
+              nodeRef={nodeRef2}
+              // mountOnEnter
+              // unmountOnExit
+              classNames="rotate-arrow"
+              in={isDropdownOpen}
+              timeout={200}
+            >
+              <FontAwesomeIcon
+                ref={nodeRef2}
+                icon={faChevronRight}
+                className={styles["chevron-down"]}
+                onClick={() => setIsDropdownOpen((prevState) => !prevState)}
+              />
+            </CSSTransition>
           </NavLink>
           <Transition
             nodeRef={nodeRef}
