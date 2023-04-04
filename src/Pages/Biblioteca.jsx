@@ -1,8 +1,4 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
-// import backgroundImage from "../Assets/biblioteca.jpg";
-// import backgroundImage from "../Assets/publicaciones-2.jpg";
-// import backgroundImage from "../Assets/home-2.avif";
-
 import Book from "../Components/Book";
 import styles from "./Biblioteca.module.css";
 
@@ -17,28 +13,32 @@ function Biblioteca() {
         <h2 className={styles["heading-secondary-biblioteca"]}>
           Catálogo de libros
         </h2>
-        <Book />
-        <Book />
-        <Book />
-        <Book />
+        <p className={styles["biblioteca-p-catalogo"]}>
+          Accedé a nuestro catálogo de libros a través del siguiente link
+        </p>
+        <a
+          href="http://abcdonline.com.ar/adeip"
+          target="_blank"
+          rel="noreferrer"
+          className={styles["biblioteca-link-catalogo"]}
+        >
+          http://abcdonline.com.ar/adeip
+        </a>
+
         <h2
           className={`${styles["bibliotecaria-title"]}, ${styles["heading-secondary-biblioteca"]}`}
         >
           Bibliotecaria
         </h2>
         <div className={styles.bibliotecaria}>
-          {/* <div className={styles.imgBibliotecaria}></div> */}
           <p>
             <strong>Nombre y Apellido:</strong> Miriam Testero
           </p>
-          {/* <p>
-            <strong>Apellido:</strong> Testero
-          </p> */}
           <p>
-            <strong>Teléfono:</strong> 1168813594
+            <strong>Teléfono:</strong> +54 9 341 354-2535
           </p>
           <p>
-            <strong>Email:</strong> miriamtestero@hotmail.com
+            <strong>Email:</strong> miriamtestero@gmail.com
           </p>
         </div>
       </main>
