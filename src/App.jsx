@@ -11,6 +11,7 @@ import Biblioteca from "./Pages/Biblioteca";
 import ActividadesAcademicas from "./Pages/ActividadesAcademicas";
 import Congresos from "./Pages/Congresos";
 import FormularioMiembro from "./Pages/FormularioMiembro";
+import Historia from "./Pages/Historia";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
       {
         path: "/formulario-miembro",
         element: <FormularioMiembro />,
+      },
+      {
+        path: "/historia",
+        element: <Historia />,
       },
     ],
   },

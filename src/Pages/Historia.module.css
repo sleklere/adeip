@@ -1,0 +1,116 @@
+.historia-container {
+  width: 60%;
+  text-align: center;
+  font-size: 2rem;
+
+  margin: 5rem auto 5rem auto;
+}
+
+.historia-container p {
+  line-height: 1.8;
+
+  margin-bottom: 4rem;
+}
+
+.historia-link-congresos {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+.quotes-container {
+  width: 100%;
+  background-color: #ebebeb;
+
+  position: relative;
+
+  margin: 6rem auto;
+  padding: 5rem;
+}
+
+.quotes-container-icon {
+  font-size: 6rem;
+  color: white;
+  background-color: lightseagreen;
+  border-radius: 1000px;
+
+  position: absolute;
+  top: -5rem;
+  right: -5rem;
+
+  padding: 2rem 3rem;
+}
+
+.quotes-container p {
+  margin-bottom: 3rem;
+}
+
+.quotes-container p:last-child {
+  margin-bottom: 0rem;
+}
+
+/*/ /////////////////////////////*/
+/*////////MEDIA QUERIES/////////*/
+/*/ /////////////////////////////*/
+@media (max-width: 1280px) {
+  .historia-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .historia-container {
+    width: 80%;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .historia-container {
+    font-size: 1.8rem;
+  }
+
+  .historia-container p {
+    line-height: 1.6;
+
+    margin-bottom: 3rem;
+  }
+
+  .quotes-container {
+    margin: 4rem auto;
+    padding: 4rem;
+  }
+
+  .quotes-container-icon {
+    font-size: 4rem;
+
+    top: -3.5rem;
+    right: -3.5rem;
+
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .historia-container {
+    font-size: 1.6rem;
+  }
+
+  .historia-container p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .quotes-container {
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+  }
+
+  .quotes-container-icon {
+    font-size: 2.5rem;
+
+    top: -2.5rem;
+    right: -2.5rem;
+
+    padding: 1.2rem 1.5rem;
+  }
+}
