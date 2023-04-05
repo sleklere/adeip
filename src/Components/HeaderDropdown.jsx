@@ -45,6 +45,14 @@ function HeaderDropdown(props) {
       >
         Congresos
       </NavLink>
+
+      <NavLink
+        to={"/historia"}
+        className={navLinkFn}
+        onClick={props.onMenuClose}
+      >
+        Historia
+      </NavLink>
     </ul>
   );
 }
