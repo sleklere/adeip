@@ -1,5 +1,4 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
-import Book from "../Components/Book";
 import styles from "./Biblioteca.module.css";
 
 function Biblioteca() {

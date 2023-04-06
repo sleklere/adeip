@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Historia() {
   return (
     <>
-      <PageLayoutTop title={"Historia de ADEIP"} image={backgroundImage} />
+      <PageLayoutTop title={"HISTORIA DE ADEIP"} image={backgroundImage} />
       <div className={styles["historia-container"]}>
         <p>
           ADEIP nació a partir de la intención de un grupo de psicólogos

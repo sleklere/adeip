@@ -5,7 +5,7 @@ import styles from "./MobileNavDropdown.module.css";
 
 function MobileNavDropdown(props) {
   return (
-    <ul className={styles["sub-links"]}>
+    <ul className={styles["sub-links"]} ref={props.transitionRef}>
       <li>
         <NavLink
           to={"/consejo-directivo"}
@@ -22,6 +22,24 @@ function MobileNavDropdown(props) {
           onClick={props.onMenuClose}
         >
           Afiliese a ADEIP
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/congresos"}
+          className={navLinkFn}
+          onClick={props.onMenuClose}
+        >
+          Congresos
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to={"/historia"}
+          className={navLinkFn}
+          onClick={props.onMenuClose}
+        >
+          Historia
         </NavLink>
       </li>
     </ul>

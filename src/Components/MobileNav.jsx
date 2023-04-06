@@ -5,6 +5,7 @@ import styles from "./MobileNav.module.css";
 import navLinkFn from "../Utils/navLinkFunction";
 import { CSSTransition } from "react-transition-group";
 import { useRef, useState } from "react";
+import MobileNavDropdown from "./MobileNavDropdown";
 
 function MobileNav(props) {
   const nodeRef = useRef(null);
@@ -68,7 +69,7 @@ function MobileNav(props) {
               in={dropdownOpen}
               timeout={200}
             >
-              <ul className={styles["sub-links"]} ref={nodeRef}>
+              {/* <ul className={styles["sub-links"]} ref={nodeRef}>
                 <li>
                   <NavLink
                     to={"/consejo-directivo"}
@@ -87,9 +88,26 @@ function MobileNav(props) {
                     Afiliese a ADEIP
                   </NavLink>
                 </li>
-              </ul>
-              {/* <MobileNavDropdown ref={nodeRef} /> */}
-              {/* <h2 ref={nodeRef}>ANIMATION</h2> */}
+                <li>
+                  <NavLink
+                    to={"/congresos"}
+                    className={navLinkFn}
+                    onClick={props.onMenuClose}
+                  >
+                    Congresos
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    to={"/historia"}
+                    className={navLinkFn}
+                    onClick={props.onMenuClose}
+                  >
+                    Historia
+                  </NavLink>
+                </li>
+              </ul> */}
+              <MobileNavDropdown transitionRef={nodeRef} />
             </CSSTransition>
           </li>
           <li>
@@ -130,7 +148,6 @@ function MobileNav(props) {
           </li>
         </ul>
       </nav>
-      {/* <img src={navBg} alt={"Mobile navigation background"} /> */}
     </div>
   );
 }
