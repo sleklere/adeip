@@ -23,6 +23,13 @@ function HeaderDropdown(props) {
       // onMouseLeave={props.closeMenu}
     >
       <NavLink
+        to={"/sobre-adeip"}
+        className={navLinkFn}
+        onClick={props.onMenuClose}
+      >
+        Acerca de
+      </NavLink>
+      <NavLink
         to={"/consejo-directivo"}
         className={navLinkFn}
         onClick={props.onMenuClose}

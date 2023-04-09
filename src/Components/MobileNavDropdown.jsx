@@ -8,6 +8,15 @@ function MobileNavDropdown(props) {
     <ul className={styles["sub-links"]} ref={props.transitionRef}>
       <li>
         <NavLink
+          to={"/sobre-adeip"}
+          className={navLinkFn}
+          onClick={props.onMenuClose}
+        >
+          Acerca de
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
           to={"/consejo-directivo"}
           className={navLinkFn}
           onClick={props.onMenuClose}

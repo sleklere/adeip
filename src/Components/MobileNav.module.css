@@ -78,11 +78,23 @@
 }
 
 .mobile-nav {
-  margin-top: 16rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
   font-size: 2.8rem;
+
+  transition: all 0.3s;
+  max-height: fit-content;
+}
+
+.mobile-nav li {
+  transition: all 0.3s;
+}
+
+.li-dropdown {
+  color: var(--font-regular);
+  font-weight: 500;
 }
 
 .dropdown-arrow {

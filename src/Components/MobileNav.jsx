@@ -12,6 +12,10 @@ function MobileNav(props) {
   const nodeRef2 = useRef(null);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
+  const toggleDropdown = () => {
+    setDropdownOpen((prevState) => !prevState);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles["layout-top"]}>
@@ -37,14 +41,14 @@ function MobileNav(props) {
               Inicio
             </NavLink>
           </li>
-          <li>
-            <NavLink
+          <li className={styles["li-dropdown"]} onClick={toggleDropdown}>
+            {/* <NavLink
               to={"/sobre-adeip"}
               className={navLinkFn}
               onClick={props.onMenuClose}
-            >
-              Sobre ADEIP
-            </NavLink>
+            > */}
+            Sobre ADEIP
+            {/* </NavLink> */}
             <CSSTransition
               nodeRef={nodeRef2}
               // mountOnEnter
@@ -57,7 +61,7 @@ function MobileNav(props) {
                 ref={nodeRef2}
                 icon={faChevronRight}
                 className={styles["dropdown-arrow"]}
-                onClick={() => setDropdownOpen((prevState) => !prevState)}
+                // onClick={toggleDropdown}
               />
             </CSSTransition>
             {/* {dropdownOpen && <MobileNavDropdown />} */}
@@ -67,7 +71,7 @@ function MobileNav(props) {
               unmountOnExit
               classNames="fade-slide"
               in={dropdownOpen}
-              timeout={200}
+              timeout={500}
             >
               {/* <ul className={styles["sub-links"]} ref={nodeRef}>
                 <li>
@@ -107,7 +111,10 @@ function MobileNav(props) {
                   </NavLink>
                 </li>
               </ul> */}
-              <MobileNavDropdown transitionRef={nodeRef} />
+              <MobileNavDropdown
+                transitionRef={nodeRef}
+                onMenuClose={props.onMenuClose}
+              />
             </CSSTransition>
           </li>
           <li>

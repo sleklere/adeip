@@ -32,10 +32,9 @@ function Inicio() {
           <div className={styles.row}>
             <h3 className={styles["heading-tertiary"]}>Historia de ADEIP</h3>
             <p>
-              ADEIP. es una Asociación Civil, fundada en 1988 con el propósito
-              de promover la participación, el intercambio y el nucleamiento de
-              los profesionales de todo el país Interesados en el
-              psicodiagnóstico.
+              ADEIP es una Asociación Civil, fundada en 1988 con el propósito de
+              promover la participación, el intercambio y el nucleamiento de los
+              profesionales de todo el país Interesados en el psicodiagnóstico.
             </p>
             <Link
               toz="/"

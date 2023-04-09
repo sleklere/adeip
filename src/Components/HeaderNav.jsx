@@ -30,28 +30,28 @@ function HeaderNav() {
           onMouseLeave={closeDropdown}
           className={styles["li-dropdown"]}
         >
-          <NavLink to={"/sobre-adeip"} className={navLinkFn}>
-            Sobre ADEIP{" "}
-            {/* <FontAwesomeIcon
+          {/* <Link to={"#"} className={navLinkFn}> */}
+          Sobre ADEIP{" "}
+          {/* <FontAwesomeIcon
               icon={faChevronDown}
               className={styles["chevron-down"]}
             /> */}
-            <CSSTransition
-              nodeRef={nodeRef2}
-              // mountOnEnter
-              // unmountOnExit
-              classNames="rotate-arrow"
-              in={isDropdownOpen}
-              timeout={200}
-            >
-              <FontAwesomeIcon
-                ref={nodeRef2}
-                icon={faChevronRight}
-                className={styles["chevron-down"]}
-                onClick={() => setIsDropdownOpen((prevState) => !prevState)}
-              />
-            </CSSTransition>
-          </NavLink>
+          <CSSTransition
+            nodeRef={nodeRef2}
+            // mountOnEnter
+            // unmountOnExit
+            classNames="rotate-arrow"
+            in={isDropdownOpen}
+            timeout={200}
+          >
+            <FontAwesomeIcon
+              ref={nodeRef2}
+              icon={faChevronRight}
+              className={styles["chevron-down"]}
+              onClick={() => setIsDropdownOpen((prevState) => !prevState)}
+            />
+          </CSSTransition>
+          {/* </Link> */}
           <Transition
             nodeRef={nodeRef}
             mountOnEnter

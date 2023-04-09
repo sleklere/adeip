@@ -18,6 +18,13 @@
 }
 .li-dropdown {
   position: relative;
+  color: var(--font-regular);
+  font-weight: 500;
+}
+
+.li-dropdown:hover {
+  cursor: pointer;
+  color: var(--main-color);
 }
 
 /* .li-dropdown:hover {

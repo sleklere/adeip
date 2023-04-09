@@ -18,7 +18,7 @@
 }
 
 .dropdown-menu a {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.933);
   border: 1px solid var(--lightest-gray);
   border-top: none;
   border-bottom-left-radius: 2px;
@@ -47,6 +47,9 @@
   transition-delay: calc((var(--dropdown-speed) / 4) * 3);
 }
 .dropdown-menu a:nth-child(4) {
+  transition-delay: calc((var(--dropdown-speed) / 4) * 4);
+}
+.dropdown-menu a:nth-child(5) {
   transition-delay: var(--dropdown-speed);
 }
 
