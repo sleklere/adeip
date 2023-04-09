@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
 import styles from "./MobileNav.module.css";
 import navLinkFn from "../Utils/navLinkFunction";
-import { CSSTransition } from "react-transition-group";
+import { CSSTransition, Transition } from "react-transition-group";
 import { useRef, useState } from "react";
 import MobileNavDropdown from "./MobileNavDropdown";
 
@@ -35,125 +35,95 @@ function MobileNav(props) {
         }
       </div>
       <nav>
-        <ul className={styles["mobile-nav"]}>
-          <li>
-            <NavLink to={"/"} className={navLinkFn}>
-              Inicio
-            </NavLink>
-          </li>
-          <li className={styles["li-dropdown"]} onClick={toggleDropdown}>
-            {/* <NavLink
-              to={"/sobre-adeip"}
-              className={navLinkFn}
-              onClick={props.onMenuClose}
-            > */}
-            Sobre ADEIP
-            {/* </NavLink> */}
-            <CSSTransition
-              nodeRef={nodeRef2}
-              // mountOnEnter
-              // unmountOnExit
-              classNames="rotate-arrow"
-              in={dropdownOpen}
-              timeout={200}
+        <Transition nodeRef={nodeRef} in={dropdownOpen} timeout={200}>
+          {(state) => (
+            <ul
+              ref={nodeRef}
+              className={[
+                styles["mobile-nav"],
+                state === "entering"
+                  ? styles["mobile-nav-open"]
+                  : state === "entered"
+                  ? styles["mobile-nav-opened"]
+                  : state === "exiting"
+                  ? styles["mobile-nav-closed"]
+                  : null,
+              ].join(" ")}
             >
-              <FontAwesomeIcon
-                ref={nodeRef2}
-                icon={faChevronRight}
-                className={styles["dropdown-arrow"]}
-                // onClick={toggleDropdown}
-              />
-            </CSSTransition>
-            {/* {dropdownOpen && <MobileNavDropdown />} */}
-            <CSSTransition
-              nodeRef={nodeRef}
-              mountOnEnter
-              unmountOnExit
-              classNames="fade-slide"
-              in={dropdownOpen}
-              timeout={500}
-            >
-              {/* <ul className={styles["sub-links"]} ref={nodeRef}>
-                <li>
-                  <NavLink
-                    to={"/consejo-directivo"}
-                    className={navLinkFn}
-                    onClick={props.onMenuClose}
-                  >
-                    Consejo Directivo
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to={"/formulario-miembro"}
-                    className={navLinkFn}
-                    onClick={props.onMenuClose}
-                  >
-                    Afiliese a ADEIP
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to={"/congresos"}
-                    className={navLinkFn}
-                    onClick={props.onMenuClose}
-                  >
-                    Congresos
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to={"/historia"}
-                    className={navLinkFn}
-                    onClick={props.onMenuClose}
-                  >
-                    Historia
-                  </NavLink>
-                </li>
-              </ul> */}
-              <MobileNavDropdown
-                transitionRef={nodeRef}
-                onMenuClose={props.onMenuClose}
-              />
-            </CSSTransition>
-          </li>
-          <li>
-            <NavLink
-              to={"/actividades-academicas"}
-              className={navLinkFn}
-              onClick={props.onMenuClose}
-            >
-              Actividades Académicas
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to={"/publicaciones"}
-              className={navLinkFn}
-              onClick={props.onMenuClose}
-            >
-              Publicaciones
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to={"/biblioteca"}
-              className={navLinkFn}
-              onClick={props.onMenuClose}
-            >
-              Biblioteca
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to={"/contacto"}
-              className={navLinkFn}
-              onClick={props.onMenuClose}
-            >
-              Contacto
-            </NavLink>
-          </li>
-        </ul>
+              <li>
+                <NavLink to={"/"} className={navLinkFn}>
+                  Inicio
+                </NavLink>
+              </li>
+              <li className={styles["li-dropdown"]} onClick={toggleDropdown}>
+                Sobre ADEIP
+                <CSSTransition
+                  nodeRef={nodeRef2}
+                  classNames="rotate-arrow"
+                  in={dropdownOpen}
+                  timeout={200}
+                >
+                  <FontAwesomeIcon
+                    ref={nodeRef2}
+                    icon={faChevronRight}
+                    className={styles["dropdown-arrow"]}
+                  />
+                </CSSTransition>
+                <Transition
+                  nodeRef={nodeRef}
+                  mountOnEnter
+                  unmountOnExit
+                  in={dropdownOpen}
+                  timeout={200}
+                >
+                  {(state) => (
+                    <MobileNavDropdown
+                      transitionRef={nodeRef}
+                      show={state}
+                      onMenuClose={props.onMenuClose}
+                    />
+                  )}
+                </Transition>
+              </li>
+              <li>
+                <NavLink
+                  to={"/actividades-academicas"}
+                  className={navLinkFn}
+                  onClick={props.onMenuClose}
+                >
+                  Actividades Académicas
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/publicaciones"}
+                  className={navLinkFn}
+                  onClick={props.onMenuClose}
+                >
+                  Publicaciones
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/biblioteca"}
+                  className={navLinkFn}
+                  onClick={props.onMenuClose}
+                >
+                  Biblioteca
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to={"/contacto"}
+                  className={navLinkFn}
+                  onClick={props.onMenuClose}
+                >
+                  Contacto
+                </NavLink>
+              </li>
+            </ul>
+          )}
+        </Transition>
       </nav>
     </div>
   );

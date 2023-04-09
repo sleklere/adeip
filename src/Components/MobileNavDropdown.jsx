@@ -4,8 +4,19 @@ import navLinkFn from "../Utils/navLinkFunction";
 import styles from "./MobileNavDropdown.module.css";
 
 function MobileNavDropdown(props) {
+  const classes = [
+    styles["dropdown-menu"],
+    props.show === "entering"
+      ? styles["dropdown-open"]
+      : props.show === "entered"
+      ? styles["dropdown-opened"]
+      : props.show === "exiting"
+      ? styles["dropdown-closed"]
+      : null,
+  ];
+
   return (
-    <ul className={styles["sub-links"]} ref={props.transitionRef}>
+    <ul className={classes.join(" ")} ref={props.transitionRef}>
       <li>
         <NavLink
           to={"/sobre-adeip"}
