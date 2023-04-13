@@ -50,7 +50,13 @@ function Footer() {
             icon={faLocationDot}
             className={styles["icon-footer"]}
           />
-          <p>Rioja 1037 - Piso 4 Rosario, Argentina</p>
+          <a
+            href="https://www.google.com/maps/place/AyM,+Rioja+1037,+S2000+Rosario,+Santa+Fe/@-32.9479359,-60.6424489,17z/data=!3m1!4b1!4m6!3m5!1s0x95b7ab1980b54531:0x9e12c2b7c8c841a2!8m2!3d-32.9479405!4d-60.637578!16s%2Fg%2F11cskq5jcd"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Rioja 1037 - Piso 4 Rosario, Argentina
+          </a>
         </div>
         <div
           className={`${styles["info-icon-footer"]} ${styles["info2-icon-footer"]}`}

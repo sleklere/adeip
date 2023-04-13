@@ -8,7 +8,7 @@ function SobreAdeip() {
   return (
     <div className={styles.container}>
       <PageLayoutTop
-        title={"SOBRE ADEIP"}
+        title={"ACERCA DE ADEIP"}
         // image={backgroundImage}
       />
       <main className={styles.main}>
