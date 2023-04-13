@@ -1,9 +1,9 @@
-import PageLayoutTop from "../Components/PageLayoutTop";
-import backgroundImage from "../Assets/page-layout-top.jpg";
-import styles from "./Historia.module.css";
 import { Link } from "react-router-dom";
 import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PageLayoutTop from "../Components/PageLayoutTop";
+import styles from "./Historia.module.css";
+import backgroundImage from "../Assets/page-layout-top.jpg";
 
 function Historia() {
   return (

@@ -1,10 +1,10 @@
-import styles from "./Footer.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
   faPhone,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (

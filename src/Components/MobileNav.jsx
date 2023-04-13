@@ -1,11 +1,11 @@
 import { faChevronRight, faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link, NavLink } from "react-router-dom";
-import styles from "./MobileNav.module.css";
-import navLinkFn from "../Utils/navLinkFunction";
 import { CSSTransition, Transition } from "react-transition-group";
 import { useRef, useState } from "react";
 import MobileNavDropdown from "./MobileNavDropdown";
+import navLinkFn from "../Utils/navLinkFunction";
+import styles from "./MobileNav.module.css";
 
 function MobileNav(props) {
   const nodeRef = useRef(null);

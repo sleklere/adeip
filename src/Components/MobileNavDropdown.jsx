@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import navLinkFn from "../Utils/navLinkFunction";
-
 import styles from "./MobileNavDropdown.module.css";
 
 function MobileNavDropdown(props) {

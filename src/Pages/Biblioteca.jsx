@@ -4,10 +4,7 @@ import styles from "./Biblioteca.module.css";
 function Biblioteca() {
   return (
     <div className={styles.container}>
-      <PageLayoutTop
-        title={"BIBLIOTECA"}
-        // image={backgroundImage}
-      />
+      <PageLayoutTop title={"BIBLIOTECA"} />
       <main className={styles["main-biblioteca"]}>
         <h2 className={styles["heading-secondary-biblioteca"]}>
           Catálogo de libros

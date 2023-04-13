@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import navLinkFn from "../Utils/navLinkFunction";
-
 import styles from "./HeaderDropdown.module.css";
 
 function HeaderDropdown(props) {
@@ -20,7 +19,6 @@ function HeaderDropdown(props) {
       ref={props.transitionRef}
       className={classes.join(" ")}
       onMouseEnter={props.openMenu}
-      // onMouseLeave={props.closeMenu}
     >
       <NavLink
         to={"/sobre-adeip"}

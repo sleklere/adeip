@@ -1,7 +1,5 @@
 import { Outlet } from "react-router-dom";
 import styles from "./PageLayoutTop.module.css";
-
-// import bgImage from "../Assets/home-4.jpg";
 import bgImage from "../Assets/page-layout-top.jpg";
 
 function PageLayoutTop(props) {
@@ -10,7 +8,6 @@ function PageLayoutTop(props) {
       <div
         className={styles["titulo"]}
         style={{
-          // backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${props.image})`,
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(${
             props.image || bgImage
           })`,

@@ -1,9 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
-import Contact from "./Pages/Contact";
+import MainLayout from "./Pages/MainLayout";
 import ErrorPage from "./Pages/Error";
 import Inicio from "./Pages/Inicio";
-import MainLayout from "./Pages/MainLayout";
 import SobreAdeip from "./Pages/SobreAdeip";
 import ConsejoDirectivo from "./Pages/ConsejoDirectivo";
 import Publicaciones from "./Pages/Publicaciones";
@@ -12,6 +10,7 @@ import ActividadesAcademicas from "./Pages/ActividadesAcademicas";
 import Congresos from "./Pages/Congresos";
 import FormularioMiembro from "./Pages/FormularioMiembro";
 import Historia from "./Pages/Historia";
+import Contact from "./Pages/Contact";
 
 const router = createBrowserRouter([
   {

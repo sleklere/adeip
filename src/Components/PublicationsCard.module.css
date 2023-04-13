@@ -1,8 +1,5 @@
 .card {
-  height: fit-content;
-  width: fit-content;
-
-  max-width: 100%;
+  max-height: 30rem;
   background-color: #ebebeb;
 
   display: flex;
@@ -11,8 +8,14 @@
   transition: all 0.25s;
 }
 
+.card-img--div {
+  overflow: hidden;
+}
+
 .card img {
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .div {

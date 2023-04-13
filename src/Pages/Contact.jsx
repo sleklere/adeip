@@ -1,16 +1,10 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
-// import backgroundImage from "../Assets/contact-2.jpg";
-// import backgroundImage from "../Assets/home-2.avif";
-
 import styles from "./Contact.module.css";
 
 function Contact() {
   return (
     <>
-      <PageLayoutTop
-        title={"CONTACTO"}
-        // image={backgroundImage}
-      />
+      <PageLayoutTop title={"CONTACTO"} />
       <form className={styles.form}>
         <label>
           Su nombre *

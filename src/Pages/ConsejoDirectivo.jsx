@@ -1,15 +1,10 @@
-import styles from "./ConsejoDirectivo.module.css";
-
 import PageLayoutTop from "../Components/PageLayoutTop";
-// import backgroundImage from "../Assets/consejo-directivo.jpg";
+import styles from "./ConsejoDirectivo.module.css";
 
 function ConsejoDirectivo() {
   return (
     <div className={styles.container}>
-      <PageLayoutTop
-        title={"CONSEJO DIRECTIVO"}
-        // image={backgroundImage}
-      />
+      <PageLayoutTop title={"CONSEJO DIRECTIVO"} />
       <div className={styles.title}>
         <h2 className={styles["heading-secondary"]}>
           Consejo Directivo ADEIP 2022-2023

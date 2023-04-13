@@ -1,9 +1,6 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
-// import backgroundImage from "../Assets/actividades-academicas-copia.jpg";
-// import backgroundImage from "../Assets/home-2.avif";
-
-import styles from "./ActividadesAcademicas.module.css";
 import Course from "../Components/Course";
+import styles from "./ActividadesAcademicas.module.css";
 
 function ActividadesAcademicas() {
   return (
