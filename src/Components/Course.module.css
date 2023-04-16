@@ -6,7 +6,6 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transition: all 0.25s;
 
-  padding: 2rem;
   margin-bottom: 3%;
 }
 
@@ -17,17 +16,13 @@
 .img-curso {
   height: 25rem;
   width: 100%;
-  border: solid 0.5px black;
-
-  margin-bottom: 1rem;
+  /* object-fit: contain; */
+  object-fit: cover;
+  object-position: top;
 }
 
-.ubicacion-curso {
-  font-size: 1.4rem;
-  text-align: center;
-  color: #9b9b9b;
-
-  margin-bottom: 0.5rem;
+.container-curso-text {
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .nombre-curso {
@@ -37,11 +32,15 @@
   margin-bottom: 1rem;
 }
 
-.info-curso {
+.info-curso-container {
   font-size: 1.8rem;
   text-align: center;
 
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.info-curso-container p {
+  margin-bottom: 1rem;
 }
 
 .btn-curso-container {
@@ -99,7 +98,7 @@
   .container-curso {
     width: 30rem;
 
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
 
   .img-curso {
@@ -129,7 +128,7 @@
 
   .btn-curso {
     font-size: 1.4rem;
-    width: 50%;
+    width: 60%;
 
     padding: 0.8rem;
   }

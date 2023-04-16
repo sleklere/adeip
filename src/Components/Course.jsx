@@ -1,19 +1,27 @@
 import styles from "./Course.module.css";
 
-function Course() {
+function Course(props) {
   return (
     <div className={styles["container-curso"]}>
-      <div className={styles["img-curso"]}></div>
-      <p className={styles["ubicacion-curso"]}>Ubicación del curso</p>
-      <h2 className={styles["nombre-curso"]}>Nombre del Curso</h2>
-      <p className={styles["info-curso"]}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
-        illo accusamus porro esse deserunt sed assumenda neque minima vitae.
-        Architecto amet veritatis excepturi placeat quasi ipsa cum, eveniet
-        iusto dolorem.
-      </p>
-      <div className={styles["btn-curso-container"]}>
-        <button className={styles["btn-curso"]}>Mas Información</button>
+      <img
+        src={props.courseImg}
+        className={styles["img-curso"]}
+        alt="Flyer de un curso"
+      />
+      <div className={styles["container-curso-text"]}>
+        {/* <p className={styles["ubicacion-curso"]}>{props.courseUbication}</p> */}
+        <h2 className={styles["nombre-curso"]}>{props.courseName}</h2>
+        <div className={styles["info-curso-container"]}>
+          <p>Fecha: {props.courseDate}</p>
+          <p>Modalidad: {props.courseModality}</p>
+          <p>Inscripción Socios: {props.courseIncriptionPartners}</p>
+          <p>Inscripción No Socios: {props.courseIncriptionNoPartners}</p>
+        </div>
+        <div className={styles["btn-curso-container"]}>
+          <a href={props.courseImg} target="_blank" rel="noreferrer">
+            <button className={styles["btn-curso"]}>Mas Información</button>
+          </a>
+        </div>
       </div>
     </div>
   );
