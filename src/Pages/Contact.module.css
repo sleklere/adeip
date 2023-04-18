@@ -14,7 +14,7 @@
 .form label {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.5rem;
 }
 
 .form input,
@@ -52,4 +52,26 @@
 
 .form button:hover {
   background-color: var(--main-color-dark);
+}
+
+/*////////////*/
+/*/VALIDATIONS/*/
+/*////////////*/
+.input-invalid {
+  border: 1px solid #bb2929 !important;
+}
+
+.label-invalid {
+  color: #bb2929 !important;
+}
+
+.p-invalid {
+  font-size: 1.2rem;
+  color: #bb2929;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  cursor: not-allowed;
 }
