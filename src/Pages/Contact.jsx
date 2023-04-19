@@ -1,8 +1,12 @@
+import { useRef } from "react";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import useInputValidation from "../Hooks/useInputValidation";
+import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
 
 function Contact() {
+  const formRef = useRef();
+
   const regularExpressions = {
     name: /^[a-zA-ZÁ-ÿ\s]{2,100}$/,
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -60,6 +64,15 @@ function Contact() {
     }
 
     //Aca pongo lo que quiera hacer con la info del form
+    emailjs
+      .sendForm(
+        "service_c06mxxs",
+        "template_sf7m15x",
+        formRef.current,
+        "uSmUolwAYwC88M8dh"
+      )
+      .then((result) => console.log(result, result.text))
+      .catch((err) => err.text);
   };
 
   // Validacion classes
@@ -75,12 +88,13 @@ function Contact() {
   return (
     <>
       <PageLayoutTop title={"CONTACTO"} />
-      <form className={styles.form} onSubmit={submitHandler}>
+      <form ref={formRef} className={styles.form} onSubmit={submitHandler}>
         <label className={nameClassLabel}>
           Su nombre *
           <input
             type="text"
             id="name"
+            name="user_name"
             value={nameValue}
             onChange={nameChangeHandler}
             onBlur={nameBlurHandler}
@@ -95,6 +109,7 @@ function Contact() {
           <input
             type="email"
             id="email"
+            name="user_email"
             value={emailValue}
             onChange={emailChangeHandler}
             onBlur={emailBlurHandler}
@@ -109,6 +124,7 @@ function Contact() {
           <input
             type="text"
             id="topic"
+            name="topic"
             value={topicValue}
             onChange={topicChangeHandler}
             onBlur={topicBlurHandler}
@@ -122,6 +138,7 @@ function Contact() {
           Mensaje *
           <textarea
             id="message"
+            name="message"
             value={messageValue}
             onChange={messageChangeHandler}
             onBlur={messageBlurHandler}

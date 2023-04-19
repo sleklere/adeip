@@ -19,6 +19,7 @@
 
 .form input,
 .form textarea {
+  font-family: "Montserrat";
   background-color: #fafafa;
   height: 3.2rem;
   border: 1px solid #ccc;
