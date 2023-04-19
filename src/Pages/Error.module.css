@@ -1,0 +1,28 @@
+.error-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 20rem;
+  max-width: 70rem;
+  margin: auto;
+  margin-top: 30vh;
+  color: var(--dark-gray);
+  background-color: #eee;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.error-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.error-content p {
+  font-size: 2.8rem;
+}
+
+.error-content p span {
+  font-weight: 500;
+  color: var(--accent-color);
+}
