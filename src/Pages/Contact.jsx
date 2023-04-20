@@ -19,7 +19,6 @@ function Contact() {
     hasError: nameHasError,
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
-    reset: resetName,
   } = useInputValidation((value) => regularExpressions.name.test(value));
 
   const {
@@ -28,7 +27,6 @@ function Contact() {
     hasError: emailHasError,
     valueChangeHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
-    reset: resetEmail,
   } = useInputValidation((value) => regularExpressions.email.test(value));
 
   const {
@@ -37,7 +35,6 @@ function Contact() {
     hasError: topicHasError,
     valueChangeHandler: topicChangeHandler,
     inputBlurHandler: topicBlurHandler,
-    reset: resetTopic,
   } = useInputValidation((value) => value !== "");
 
   const {
@@ -46,7 +43,6 @@ function Contact() {
     hasError: messageHasError,
     valueChangeHandler: messageChangeHandler,
     inputBlurHandler: messageBlurHandler,
-    reset: resetMessage,
   } = useInputValidation((value) => value !== "");
 
   // Validacion form
@@ -77,19 +73,15 @@ function Contact() {
 
   // Validacion classes
   const nameClassInput = nameHasError ? `${styles["input-invalid"]}` : "";
-  const nameClassLabel = nameHasError ? `${styles["label-invalid"]}` : "";
   const emailClassInput = emailHasError ? `${styles["input-invalid"]}` : "";
-  const emailClassLabel = emailHasError ? `${styles["label-invalid"]}` : "";
   const topicClassInput = topicHasError ? `${styles["input-invalid"]}` : "";
-  const topicClassLabel = topicHasError ? `${styles["label-invalid"]}` : "";
   const messageClassInput = messageHasError ? `${styles["input-invalid"]}` : "";
-  const messageClassLabel = messageHasError ? `${styles["label-invalid"]}` : "";
 
   return (
     <>
       <PageLayoutTop title={"CONTACTO"} />
       <form ref={formRef} className={styles.form} onSubmit={submitHandler}>
-        <label className={nameClassLabel}>
+        <label>
           Su nombre *
           <input
             type="text"
@@ -104,7 +96,7 @@ function Contact() {
             <p className={styles["p-invalid"]}>Este campo es obligatorio.</p>
           )}
         </label>
-        <label className={emailClassLabel}>
+        <label>
           Su E-mail *
           <input
             type="email"
@@ -119,7 +111,7 @@ function Contact() {
             <p className={styles["p-invalid"]}>Debe ser un e-mail válido.</p>
           )}
         </label>
-        <label className={topicClassLabel}>
+        <label>
           Tema/Asunto *
           <input
             type="text"
@@ -134,7 +126,7 @@ function Contact() {
             <p className={styles["p-invalid"]}>Este campo es obligatorio.</p>
           )}
         </label>
-        <label className={messageClassLabel}>
+        <label>
           Mensaje *
           <textarea
             id="message"
