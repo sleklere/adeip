@@ -33,7 +33,7 @@ function Inicio() {
               profesionales de todo el país Interesados en el psicodiagnóstico.
             </p>
             <Link
-              toz="/"
+              to="/historia"
               className={`${styles.btn} ${styles["btn-adeip-info"]}`}
             >
               Más Información
