@@ -55,7 +55,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            Rioja 1037 - Piso 4 Rosario, Argentina
+            Rioja 1037 - Piso 4 (Oficina 2) Rosario, Argentina
           </a>
         </div>
         <div

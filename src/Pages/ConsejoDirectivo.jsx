@@ -43,20 +43,20 @@ function ConsejoDirectivo() {
           <div className={`${styles.charge} ${styles["charge-pair"]}`}>
             <h4 className={styles["heading-tertiary"]}>Vocales Titulares</h4>
             <p>
-              Betria Alicia, Oscar Melillo, Ana Martos y Mula, Pontikos Mirna,
-              Falocchi Andrea
+              Alicia Betria, Oscar Melillo, Ana Martos y Mula, Mirna Pontikos,
+              Andrea Falocchi
             </p>
           </div>
           <div className={styles.charge}>
             <h4 className={styles["heading-tertiary"]}>Vocales Suplentes</h4>
             <p>
-              Fernando Castro, Levantini Susana, Laura Lesik, Cecilia Diez,
+              Fernando Castro, Susana Levantini, Laura Lesik, Cecilia Diez,
               Marcelo Alé
             </p>
           </div>
           <div className={`${styles.charge} ${styles["charge-pair"]}`}>
             <h4 className={styles["heading-tertiary"]}>Síndicos</h4>
-            <p>Mercado Beatriz, Costanza Gabriela; Suplente Romina Colacci</p>
+            <p>Beatriz Mercado, Gabriela Costanza; Suplente: Romina Colacci</p>
           </div>
           <div className={styles.charge}>
             <h4 className={styles["heading-tertiary"]}>Past President</h4>

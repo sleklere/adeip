@@ -16,7 +16,8 @@ function SobreAdeip() {
             <p>Rama Miembro de la INTERNATIONAL RORSCHACH SOCIETY</p>
             <h3 className={styles["heading-tertiary"]}>Dirección</h3>
             <p>
-              RIOJA 1037 - PISO 4 <br /> TELEFAX (0341) 424-0013(2000) <br />
+              RIOJA 1037 - PISO 4 (OFICINA 2) <br /> TELEFAX (0341)
+              424-0013(2000) <br />
               ROSARIO - ARGENTINA
             </p>
           </div>
