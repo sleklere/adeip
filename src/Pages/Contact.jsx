@@ -1,11 +1,18 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import useInputValidation from "../Hooks/useInputValidation";
 import emailjs from "@emailjs/browser";
 import styles from "./Contact.module.css";
+import { Transition } from "react-transition-group";
+import ToastForm from "../Components/ToastForm";
 
 function Contact() {
   const formRef = useRef();
+  const nodeRef = useRef(null);
+  const [showToast, setShowToast] = useState(false);
+  const closeToast = () => setShowToast(false);
+  const [toastColor, setToastColor] = useState("");
+  const [toastContent, setToastContent] = useState("");
 
   const regularExpressions = {
     name: /^[a-zA-ZÁ-ÿ\s]{2,100}$/,
@@ -59,7 +66,11 @@ function Contact() {
       return;
     }
 
-    //Aca pongo lo que quiera hacer con la info del form
+    //From this point the form is validated and ready to be sent or else.
+    // setToastContent("El formulario ha sido enviado con éxito!");
+    // setToastColor("var(--confirmation-color)");
+    // setShowToast(true);
+    // setTimeout(() => setShowToast(false), 5000);
     emailjs
       .sendForm(
         "service_c06mxxs",
@@ -67,8 +78,20 @@ function Contact() {
         formRef.current,
         "uSmUolwAYwC88M8dh"
       )
-      .then((result) => console.log(result, result.text))
-      .catch((err) => err.text);
+      .then((result) => {
+        console.log(result, result.text);
+        setToastContent("El formulario ha sido enviado con éxito!");
+        setToastColor("var(--confirmation-color)");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      })
+      .catch((err) => {
+        console.log(err.text);
+        setToastContent("Hubo un error al enviar el formulario.");
+        setToastColor("var(--accent-color)");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      });
   };
 
   // Validacion classes
@@ -79,6 +102,16 @@ function Contact() {
 
   return (
     <>
+      <Transition in={showToast} timeout={200} nodeRef={nodeRef}>
+        {(state) => (
+          <ToastForm
+            closeFn={closeToast}
+            transitionState={state}
+            bgColor={toastColor}
+            content={toastContent}
+          />
+        )}
+      </Transition>
       <PageLayoutTop title={"CONTACTO"} />
       <form ref={formRef} className={styles.form} onSubmit={submitHandler}>
         <label>

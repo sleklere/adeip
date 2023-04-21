@@ -1,8 +1,17 @@
 import PageLayoutTop from "../Components/PageLayoutTop";
 import useInputValidation from "../Hooks/useInputValidation";
+import emailjs from "@emailjs/browser";
 import styles from "./FormularioMiembro.module.css";
+import { useRef, useState } from "react";
+import ToastForm from "../Components/ToastForm";
+import { Transition } from "react-transition-group";
 
 function FormularioMiembro() {
+  const formRef = useRef();
+  const nodeRef = useRef(null);
+  const [showToast, setShowToast] = useState(false);
+  const closeToast = () => setShowToast(false);
+
   const regularExpressions = {
     name: /^[a-zA-ZÁ-ÿ\s]{2,100}$/,
     email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
@@ -145,7 +154,20 @@ function FormularioMiembro() {
       return;
     }
 
-    //Aca pongo lo que quiera hacer con la info del form
+    //From this point the form is validated and ready to be sent or else.
+    emailjs
+      .sendForm(
+        "service_c06mxxs",
+        "template_cdqbr26",
+        formRef.current,
+        "uSmUolwAYwC88M8dh"
+      )
+      .then((result) => {
+        console.log(result, result.text);
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      })
+      .catch((err) => err.text);
   };
 
   // Validacion classes
@@ -167,12 +189,24 @@ function FormularioMiembro() {
 
   return (
     <>
+      {/* {showToast && <ToastForm closeFn={closeToast} />} */}
+      <Transition in={showToast} timeout={200} nodeRef={nodeRef}>
+        {(state) => (
+          <ToastForm
+            closeFn={closeToast}
+            transitionState={state}
+            bgColor={"var(--confirmation-color)"}
+            content={"El formulario ha sido enviado con éxito!"}
+          />
+        )}
+      </Transition>
       <PageLayoutTop title={"SOLICITUD DE INGRESO COMO MIEMBRO"} />
-      <form className={styles.form} onSubmit={submitHandler}>
+      <form ref={formRef} className={styles.form} onSubmit={submitHandler}>
         <label>
           Apellido y Nombre *
           <input
             type="text"
+            name="apellido--nombre"
             value={enteredName}
             onChange={nameChangeHandler}
             onBlur={nameBlurHandler}
@@ -186,6 +220,7 @@ function FormularioMiembro() {
           N° y tipo de documento *
           <input
             type="text"
+            name="documento--tipo"
             value={enteredDni}
             onChange={dniChangeHandler}
             onBlur={dniBlurHandler}
@@ -199,6 +234,7 @@ function FormularioMiembro() {
           N° CUIT o CUIL *
           <input
             type="number"
+            name="cuit-cuil"
             value={enteredCuit}
             onChange={cuitChangeHandler}
             onBlur={cuitBlurHandler}
@@ -212,6 +248,7 @@ function FormularioMiembro() {
           Dirección *
           <input
             type="text"
+            name="direccion"
             value={enteredDirec}
             onChange={direcChangeHandler}
             onBlur={direcBlurHandler}
@@ -225,6 +262,7 @@ function FormularioMiembro() {
           Ciudad/Provincia *
           <input
             type="text"
+            name="ciudad--provincia"
             value={enteredCity}
             onChange={cityChangeHandler}
             onBlur={cityBlurHandler}
@@ -238,6 +276,7 @@ function FormularioMiembro() {
           Código Postal *
           <input
             type="number"
+            name="codigo-postal"
             value={enteredCode}
             onChange={codeChangeHandler}
             onBlur={codeBlurHandler}
@@ -251,6 +290,7 @@ function FormularioMiembro() {
           País *
           <input
             type="text"
+            name="pais"
             value={enteredCountry}
             onChange={countryChangeHandler}
             onBlur={countryBlurHandler}
@@ -264,6 +304,7 @@ function FormularioMiembro() {
           Teléfono *
           <input
             type="number"
+            name="telefono"
             value={enteredTel}
             onChange={telChangeHandler}
             onBlur={telBlurHandler}
@@ -277,6 +318,7 @@ function FormularioMiembro() {
           E-mail *
           <input
             type="email"
+            name="email"
             value={enteredEmail}
             onChange={emailChangeHandler}
             onBlur={emailBlurHandler}
@@ -295,6 +337,7 @@ function FormularioMiembro() {
             onChange={tituloChangeHandler}
             onBlur={tituloBlurHandler}
             className={tituloClassInput}
+            name="titulo"
           >
             <option value="">Seleccione una opción:</option>
             <option value="psicologo">Psicólogo</option>
@@ -310,6 +353,7 @@ function FormularioMiembro() {
           Expedido por *
           <input
             type="text"
+            name="titulo-expedido-por"
             value={enteredExp}
             onChange={expChangeHandler}
             onBlur={expBlurHandler}
@@ -323,6 +367,7 @@ function FormularioMiembro() {
           Fecha de Graduación *
           <input
             type="date"
+            name="fecha-graduacion"
             value={enteredGrad}
             onChange={gradChangeHandler}
             onBlur={gradBlurHandler}
@@ -335,6 +380,7 @@ function FormularioMiembro() {
         <label>
           Actividad *
           <textarea
+            name="actividad"
             value={enteredAct}
             onChange={actChangeHandler}
             onBlur={actBlurHandler}
@@ -347,6 +393,7 @@ function FormularioMiembro() {
         <label>
           Institución/es en la/s que trabaja *
           <textarea
+            name="instituciones"
             value={enteredWork}
             onChange={workChangeHandler}
             onBlur={workBlurHandler}
@@ -360,6 +407,7 @@ function FormularioMiembro() {
           Fecha de inscripción *
           <input
             type="date"
+            name="fecha-inscripcion"
             value={enteredInsc}
             onChange={inscChangeHandler}
             onBlur={inscBlurHandler}
@@ -372,11 +420,11 @@ function FormularioMiembro() {
         <p>Miembros que lo/la pueden presentar:</p>
         <label>
           Apellido y Nombre *
-          <input type="text" />
+          <input type="text" name="miembro-1" />
         </label>
         <label>
           Apellido y Nombre *
-          <input type="text" />
+          <input type="text" name="miembro-2" />
         </label>
 
         <button disabled={!formIsValid}>ENVIAR FORMULARIO</button>

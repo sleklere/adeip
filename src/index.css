@@ -21,10 +21,11 @@ html {
 
 :root {
   /* Colors */
-  --main-color: lightseagreen;
+  --main-color: #20b2aa;
   --main-color-dark: rgb(28, 155, 149);
   --lightest-gray: #ebebeb;
   --accent-color: #df4d55;
+  --confirmation-color: #20c97d;
 
   /* Horizontal margins for header, etc */
   --h-margins-pc: 0 10%;

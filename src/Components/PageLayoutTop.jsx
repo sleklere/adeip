@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import styles from "./PageLayoutTop.module.css";
-import bgImage from "../Assets/page-layout-top.jpg";
+import bgImage from "../Assets/page-layout-top-1.jpg";
 
 function PageLayoutTop(props) {
   return (
