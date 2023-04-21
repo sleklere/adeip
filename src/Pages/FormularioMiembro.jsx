@@ -166,14 +166,14 @@ function FormularioMiembro() {
       )
       .then((result) => {
         console.log(result, result.text);
-        setToastContent("El formulario ha sido enviado con éxito!");
+        setToastContent("Formulario enviado!");
         setToastColor("var(--confirmation-color)");
         setShowToast(true);
         setTimeout(() => setShowToast(false), 5000);
       })
       .catch((err) => {
         console.log(err.text);
-        setToastContent("Hubo un error al enviar el formulario.");
+        setToastContent("Algo salió mal.");
         setToastColor("var(--accent-color)");
         setShowToast(true);
         setTimeout(() => setShowToast(false), 5000);

@@ -69,33 +69,33 @@ function Contact() {
     //From this point the form is validated and ready to be sent or else.
 
     // For testing only
-    // setToastContent("El formulario ha sido enviado con éxito!");
+    // setToastContent("Formulario enviado!");
     // setToastColor("var(--confirmation-color)");
     // setShowToast(true);
     // setTimeout(() => setShowToast(false), 5000);
 
     // Sending the email
-    // emailjs
-    //   .sendForm(
-    //     "service_c06mxxs",
-    //     "template_sf7m15x",
-    //     formRef.current,
-    //     "uSmUolwAYwC88M8dh"
-    //   )
-    //   .then((result) => {
-    //     console.log(result, result.text);
-    //     setToastContent("El formulario ha sido enviado con éxito!");
-    //     setToastColor("var(--confirmation-color)");
-    //     setShowToast(true);
-    //     setTimeout(() => setShowToast(false), 5000);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err.text);
-    //     setToastContent("Hubo un error al enviar el formulario.");
-    //     setToastColor("var(--accent-color)");
-    //     setShowToast(true);
-    //     setTimeout(() => setShowToast(false), 5000);
-    //   });
+    emailjs
+      .sendForm(
+        "service_c06mxxs",
+        "template_sf7m15x",
+        formRef.current,
+        "uSmUolwAYwC88M8dh"
+      )
+      .then((result) => {
+        console.log(result, result.text);
+        setToastContent("Formulario enviado!");
+        setToastColor("var(--confirmation-color)");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      })
+      .catch((err) => {
+        console.log(err.text);
+        setToastContent("Algo salió mal.");
+        setToastColor("var(--accent-color)");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      });
   };
 
   // Validacion classes
