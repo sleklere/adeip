@@ -17,6 +17,7 @@
   font-size: 1.6rem;
   font-weight: 500;
   white-space: nowrap;
+  overflow: hidden;
 
   z-index: 2;
 
@@ -38,6 +39,24 @@
   cursor: pointer;
 }
 
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+}
+
+.progress-bar:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(100, 100, 100, 0.6);
+}
+
 /* Transition */
 .toast-show {
   opacity: 1;
@@ -47,9 +66,23 @@
   opacity: 1;
   transform: translateY(0);
 }
-.toast-closed {
+
+.toast-showing .progress-bar:before {
+  animation: progress 5s linear forwards;
+}
+
+.toast-closing {
   opacity: 0;
   transform: translateY(-50%);
+}
+
+@keyframes progress {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -67,7 +100,7 @@
   .toast-showing {
     transform: translate(-50%, -50%);
   }
-  .toast-closed {
+  .toast-closing {
     transform: translate(-50%, -100%);
   }
 }

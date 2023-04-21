@@ -10,6 +10,8 @@ function FormularioMiembro() {
   const formRef = useRef();
   const nodeRef = useRef(null);
   const [showToast, setShowToast] = useState(false);
+  const [toastColor, setToastColor] = useState("");
+  const [toastContent, setToastContent] = useState("");
   const closeToast = () => setShowToast(false);
 
   const regularExpressions = {
@@ -164,10 +166,18 @@ function FormularioMiembro() {
       )
       .then((result) => {
         console.log(result, result.text);
+        setToastContent("El formulario ha sido enviado con éxito!");
+        setToastColor("var(--confirmation-color)");
         setShowToast(true);
         setTimeout(() => setShowToast(false), 5000);
       })
-      .catch((err) => err.text);
+      .catch((err) => {
+        console.log(err.text);
+        setToastContent("Hubo un error al enviar el formulario.");
+        setToastColor("var(--accent-color)");
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 5000);
+      });
   };
 
   // Validacion classes
@@ -189,14 +199,13 @@ function FormularioMiembro() {
 
   return (
     <>
-      {/* {showToast && <ToastForm closeFn={closeToast} />} */}
       <Transition in={showToast} timeout={200} nodeRef={nodeRef}>
         {(state) => (
           <ToastForm
             closeFn={closeToast}
             transitionState={state}
-            bgColor={"var(--confirmation-color)"}
-            content={"El formulario ha sido enviado con éxito!"}
+            bgColor={toastColor}
+            content={toastContent}
           />
         )}
       </Transition>

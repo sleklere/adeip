@@ -12,7 +12,7 @@ function ToastForm(props) {
           : props.transitionState === "entered"
           ? styles["toast-showing"]
           : props.transitionState === "exiting"
-          ? styles["toast-closed"]
+          ? styles["toast-closing"]
           : null,
       ].join(" ")}
       style={{ backgroundColor: props.bgColor }}
@@ -23,6 +23,7 @@ function ToastForm(props) {
         className={styles["toast-close"]}
         onClick={props.closeFn}
       />
+      <div className={styles["progress-bar"]}></div>
     </div>
   );
 }
