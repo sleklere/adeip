@@ -26,6 +26,7 @@ function FormularioMiembro() {
     hasError: nameHasError,
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
+    reset: resetName,
   } = useInputValidation((value) => regularExpressions.name.test(value));
   const {
     value: enteredDni,
@@ -33,6 +34,7 @@ function FormularioMiembro() {
     hasError: dniHasError,
     valueChangeHandler: dniChangeHandler,
     inputBlurHandler: dniBlurHandler,
+    reset: resetDni,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredCuit,
@@ -40,6 +42,7 @@ function FormularioMiembro() {
     hasError: cuitHasError,
     valueChangeHandler: cuitChangeHandler,
     inputBlurHandler: cuitBlurHandler,
+    reset: resetCuit,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredDirec,
@@ -47,6 +50,7 @@ function FormularioMiembro() {
     hasError: direcHasError,
     valueChangeHandler: direcChangeHandler,
     inputBlurHandler: direcBlurHandler,
+    reset: resetDirec,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredCity,
@@ -54,6 +58,7 @@ function FormularioMiembro() {
     hasError: cityHasError,
     valueChangeHandler: cityChangeHandler,
     inputBlurHandler: cityBlurHandler,
+    reset: resetCity,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredCode,
@@ -61,6 +66,7 @@ function FormularioMiembro() {
     hasError: codeHasError,
     valueChangeHandler: codeChangeHandler,
     inputBlurHandler: codeBlurHandler,
+    reset: resetCode,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredCountry,
@@ -68,6 +74,7 @@ function FormularioMiembro() {
     hasError: countryHasError,
     valueChangeHandler: countryChangeHandler,
     inputBlurHandler: countryBlurHandler,
+    reset: resetCountry,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredTel,
@@ -75,6 +82,7 @@ function FormularioMiembro() {
     hasError: telHasError,
     valueChangeHandler: telChangeHandler,
     inputBlurHandler: telBlurHandler,
+    reset: resetTel,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredEmail,
@@ -82,6 +90,7 @@ function FormularioMiembro() {
     hasError: emailHasError,
     valueChangeHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
+    reset: resetEmail,
   } = useInputValidation((value) => regularExpressions.email.test(value));
   const {
     value: enteredTitulo,
@@ -89,6 +98,7 @@ function FormularioMiembro() {
     hasError: tituloHasError,
     valueChangeHandler: tituloChangeHandler,
     inputBlurHandler: tituloBlurHandler,
+    reset: resetTitulo,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredExp,
@@ -96,6 +106,7 @@ function FormularioMiembro() {
     hasError: expHasError,
     valueChangeHandler: expChangeHandler,
     inputBlurHandler: expBlurHandler,
+    reset: resetExp,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredGrad,
@@ -103,6 +114,7 @@ function FormularioMiembro() {
     hasError: gradHasError,
     valueChangeHandler: gradChangeHandler,
     inputBlurHandler: gradBlurHandler,
+    reset: resetGrad,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredAct,
@@ -110,6 +122,7 @@ function FormularioMiembro() {
     hasError: actHasError,
     valueChangeHandler: actChangeHandler,
     inputBlurHandler: actBlurHandler,
+    reset: resetAct,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredWork,
@@ -117,6 +130,7 @@ function FormularioMiembro() {
     hasError: workHasError,
     valueChangeHandler: workChangeHandler,
     inputBlurHandler: workBlurHandler,
+    reset: resetWork,
   } = useInputValidation((value) => value !== "");
   const {
     value: enteredInsc,
@@ -124,6 +138,7 @@ function FormularioMiembro() {
     hasError: inscHasError,
     valueChangeHandler: inscChangeHandler,
     inputBlurHandler: inscBlurHandler,
+    reset: resetInsc,
   } = useInputValidation((value) => value !== "");
 
   // Validacion form
@@ -170,6 +185,22 @@ function FormularioMiembro() {
         setToastColor("var(--confirmation-color)");
         setShowToast(true);
         setTimeout(() => setShowToast(false), 5000);
+        // Resetting all values to ""
+        resetName();
+        resetDni();
+        resetCuit();
+        resetDirec();
+        resetCity();
+        resetCode();
+        resetCountry();
+        resetTel();
+        resetEmail();
+        resetTitulo();
+        resetExp();
+        resetGrad();
+        resetAct();
+        resetWork();
+        resetInsc();
       })
       .catch((err) => {
         console.log(err.text);

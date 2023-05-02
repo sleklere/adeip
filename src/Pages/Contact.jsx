@@ -26,6 +26,7 @@ function Contact() {
     hasError: nameHasError,
     valueChangeHandler: nameChangeHandler,
     inputBlurHandler: nameBlurHandler,
+    reset: resetName,
   } = useInputValidation((value) => regularExpressions.name.test(value));
 
   const {
@@ -34,6 +35,7 @@ function Contact() {
     hasError: emailHasError,
     valueChangeHandler: emailChangeHandler,
     inputBlurHandler: emailBlurHandler,
+    reset: resetEmail,
   } = useInputValidation((value) => regularExpressions.email.test(value));
 
   const {
@@ -42,6 +44,7 @@ function Contact() {
     hasError: topicHasError,
     valueChangeHandler: topicChangeHandler,
     inputBlurHandler: topicBlurHandler,
+    reset: resetTopic,
   } = useInputValidation((value) => value !== "");
 
   const {
@@ -50,6 +53,7 @@ function Contact() {
     hasError: messageHasError,
     valueChangeHandler: messageChangeHandler,
     inputBlurHandler: messageBlurHandler,
+    reset: resetMessage,
   } = useInputValidation((value) => value !== "");
 
   // Validacion form
@@ -88,6 +92,11 @@ function Contact() {
         setToastColor("var(--confirmation-color)");
         setShowToast(true);
         setTimeout(() => setShowToast(false), 5000);
+        // Resetting all values to ""
+        resetName();
+        resetEmail();
+        resetTopic();
+        resetMessage();
       })
       .catch((err) => {
         console.log(err.text);
