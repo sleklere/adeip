@@ -13,11 +13,11 @@ function ConsejoDirectivo() {
       <main className={styles.main}>
         <section className={styles.charges}>
           <div className={styles.charge}>
-            <h3 className={styles["heading-tertiary"]}>Presidenta</h3>
+            <h3 className={styles["heading-tertiary"]}>Presidente</h3>
             <p>María Elena Ocampo</p>
           </div>
           <div className={`${styles.charge} ${styles["charge-pair"]}`}>
-            <h3 className={styles["heading-tertiary"]}>Vicepresidenta 1ª</h3>
+            <h3 className={styles["heading-tertiary"]}>Vicepresidente 1ª</h3>
             <p>Ana María Bernia</p>
           </div>
           <div className={styles.charge}>

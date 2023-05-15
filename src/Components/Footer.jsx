@@ -36,8 +36,8 @@ function Footer() {
               rel="noreferrer"
               className={styles["member-of-link"]}
             >
-              Rorschach Society
-            </a>{" "}
+              International Rorschach Society (IRS)
+            </a>
           </p>
         </div>
       </div>
