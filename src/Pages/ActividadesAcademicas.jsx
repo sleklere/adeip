@@ -4,6 +4,7 @@ import styles from "./ActividadesAcademicas.module.css";
 import imgCourse1 from "../Assets/actividadesAcademicas/course1.jpg";
 import imgCourse2 from "../Assets/actividadesAcademicas/course2.jpg";
 import imgCourse3 from "../Assets/actividadesAcademicas/course3.png";
+import imgCourse4 from "../Assets/actividadesAcademicas/course4.jpeg";
 
 function ActividadesAcademicas() {
   return (
@@ -35,6 +36,14 @@ function ActividadesAcademicas() {
             courseModality="Presencial"
             courseIncriptionPartners="$5000"
             courseIncriptionNoPartners="$7000"
+          />
+          <Course
+            courseImg={imgCourse4}
+            courseName="Técnica gráfica persona con Arma"
+            courseDate="29/07"
+            courseModality="Virtual"
+            courseIncriptionPartners="$4000"
+            courseIncriptionNoPartners="$5000"
           />
         </div>
       </main>
