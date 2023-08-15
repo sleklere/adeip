@@ -174,10 +174,10 @@ function FormularioMiembro() {
     //From this point the form is validated and ready to be sent or else.
     emailjs
       .sendForm(
-        "service_c06mxxs",
-        "template_cdqbr26",
+        "service_vxdyvbb",
+        "template_tuoxxvi",
         formRef.current,
-        "uSmUolwAYwC88M8dh"
+        "9rHxPlKgX22r13JLO"
       )
       .then((result) => {
         console.log(result, result.text);

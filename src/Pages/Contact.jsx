@@ -81,10 +81,10 @@ function Contact() {
     // Sending the email
     emailjs
       .sendForm(
-        "service_c06mxxs",
-        "template_sf7m15x",
+        "service_vxdyvbb",
+        "template_ue4f9ic",
         formRef.current,
-        "uSmUolwAYwC88M8dh"
+        "9rHxPlKgX22r13JLO"
       )
       .then((result) => {
         console.log(result, result.text);
