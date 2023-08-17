@@ -5,6 +5,7 @@ import imgCourse1 from "../Assets/actividadesAcademicas/course1.jpg";
 import imgCourse2 from "../Assets/actividadesAcademicas/course2.jpg";
 import imgCourse3 from "../Assets/actividadesAcademicas/course3.png";
 import imgCourse4 from "../Assets/actividadesAcademicas/course4.jpeg";
+import imgCourse5 from "../Assets/actividadesAcademicas/course5.jpg";
 
 function ActividadesAcademicas() {
   return (
@@ -44,6 +45,14 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$4000"
             courseIncriptionNoPartners="$5000"
+          />
+          <Course
+            courseImg={imgCourse5}
+            courseName="Jornada Rorschach Sistema Comprehensivo"
+            courseDate="16/09"
+            courseModality="Virtual"
+            courseIncriptionPartners="$2000"
+            courseIncriptionNoPartners="$3000"
           />
         </div>
       </main>
