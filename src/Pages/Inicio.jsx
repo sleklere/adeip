@@ -52,6 +52,24 @@ function Inicio() {
             </Link>
           </div>
         </section>
+        <section className={styles["section-interview"]}>
+          <div className={styles.row}>
+            <h3 className={styles["heading-tertiary"]}>
+              Entrevista a Cristina Weigle
+            </h3>
+            <p>
+              Asidua concurrente a nuestros Congresos, maestra a quien deben
+              mucho los psicólogos laborales de ambas costas del Rio de la
+              Plata. Realizada por Beatriz Benditto.
+            </p>
+            <Link
+              to="https://drive.google.com/file/d/1BRhTPp51kUIM1adcNNmUpKmbnOtXFyMK"
+              className={`${styles.btn} ${styles["btn-adeip-info"]}`}
+            >
+              Ver Entrevista
+            </Link>
+          </div>
+        </section>
       </main>
     </div>
   );

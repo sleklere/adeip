@@ -35,9 +35,10 @@
 }
 
 .section-history,
+.section-interview,
 .section-congress {
   padding: 2rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 .section-congress img {
