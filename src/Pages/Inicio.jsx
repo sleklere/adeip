@@ -45,6 +45,12 @@ function Inicio() {
             <h3 className={styles["heading-tertiary"]}>Próximo Congreso</h3>
             <img src={NextCongress} alt="Próximo Congreso" />
             <Link
+              to="http://www.linktr.ee/adeiplaplata"
+              className={`${styles.btn} ${styles["btn-info-congreso"]}`}
+            >
+              Más Info
+            </Link>
+            <Link
               to="/congresos"
               className={`${styles.btn} ${styles["btn-contact"]}`}
             >

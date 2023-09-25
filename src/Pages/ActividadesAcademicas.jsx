@@ -6,6 +6,7 @@ import imgCourse2 from "../Assets/actividadesAcademicas/course2.jpg";
 import imgCourse3 from "../Assets/actividadesAcademicas/course3.png";
 import imgCourse4 from "../Assets/actividadesAcademicas/course4.jpeg";
 import imgCourse5 from "../Assets/actividadesAcademicas/course5.jpg";
+import imgCourse6 from "../Assets/actividadesAcademicas/course6.jpg";
 
 function ActividadesAcademicas() {
   return (
@@ -53,6 +54,14 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$2000"
             courseIncriptionNoPartners="$3000"
+          />
+          <Course
+            courseImg={imgCourse6}
+            courseName="Curso Virtual sobre MBTI"
+            courseDate="27/10 - 03/11 - 10/11"
+            courseModality="Virtual"
+            courseIncriptionPartners="$14.000"
+            courseIncriptionNoPartners="$22.000"
           />
         </div>
       </main>
