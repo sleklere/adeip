@@ -70,19 +70,19 @@
 /*////////////*/
 /*/VALIDATIONS/*/
 /*////////////*/
-.input-invalid {
+/* .input-invalid {
   border: 1px solid #bb2929 !important;
-}
+} */
 
 .label-invalid {
   color: #bb2929 !important;
 }
 
-.p-invalid {
+/* .p-invalid {
   font-size: 1.2rem !important;
   color: #bb2929 !important;
   margin-top: 0 !important;
-}
+} */
 
 button:disabled,
 button:disabled:hover,
