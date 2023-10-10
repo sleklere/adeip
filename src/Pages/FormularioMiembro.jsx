@@ -78,21 +78,22 @@ function FormularioMiembro() {
     }
 
     //From this point the form is validated and ready to be sent or else.
+
+    // development
     // emailjs
     //   .sendForm(
-    //     "service_vxdyvbb",
-    //     "template_tuoxxvi",
+    //     "service_c06mxxs",
+    //     "template_cdqbr26",
     //     formRef.current,
-    //     "9rHxPlKgX22r13JLO"
+    //     "uSmUolwAYwC88M8dh"
     //   )
-
-    // testing
+    // production
     emailjs
       .sendForm(
-        "service_c06mxxs",
-        "template_cdqbr26",
+        "service_vxdyvbb",
+        "template_tuoxxvi",
         formRef.current,
-        "uSmUolwAYwC88M8dh"
+        "9rHxPlKgX22r13JLO"
       )
       .then(result => {
         console.log(result, result.text);
@@ -274,8 +275,10 @@ function FormularioMiembro() {
             className={refSelectProps.classes}
           >
             <option value="none">Seleccione una opción</option>
-            <option value="Instagram">Instagram</option>
-            <option value="Conocido">Conocido</option>
+            <option value="Sitio Web">Sitio Web</option>
+            <option value="Redes sociales">Redes sociales</option>
+            <option value="Colegas">Colegas</option>
+            <option value="Universidad">Universidad</option>
             <option value="Otro">Otro</option>
           </select>
           {refSelectProps.isInvalid && (
