@@ -39,6 +39,10 @@
 /*////////MEDIA QUERIES/////////*/
 /*/ /////////////////////////////*/
 @media (max-width: 1700px) {
+  .container {
+    margin-bottom: 15rem;
+  }
+
   .main-actividades {
     width: 65%;
   }
@@ -50,7 +54,7 @@
 
 @media (max-width: 1280px) {
   .container {
-    margin-bottom: 15rem;
+    margin-bottom: 25rem;
   }
 
   .cursos-container {
@@ -60,7 +64,7 @@
 
 @media (max-width: 800px) {
   .container {
-    margin-bottom: 20rem;
+    margin-bottom: 28rem;
   }
 
   .cursos-container {

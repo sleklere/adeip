@@ -7,6 +7,7 @@ import imgCourse3 from "../Assets/actividadesAcademicas/course3.png";
 import imgCourse4 from "../Assets/actividadesAcademicas/course4.jpeg";
 import imgCourse5 from "../Assets/actividadesAcademicas/course5.jpg";
 import imgCourse6 from "../Assets/actividadesAcademicas/course6.jpg";
+import imgCourse7 from "../Assets/actividadesAcademicas/course7.jpg";
 
 function ActividadesAcademicas() {
   return (
@@ -62,6 +63,15 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$14.000"
             courseIncriptionNoPartners="$22.000"
+          />
+          <Course
+            courseImg={imgCourse7}
+            courseName="Problemáticas frecuentes en Psicología Forense"
+            courseDate="10/11 - 11/11"
+            courseModality="Virtual"
+            courseIncriptionPartners="$6.500"
+            courseIncriptionNoPartners="$7500"
+            pdf={process.env.PUBLIC_URL + "/actividades-course7.pdf"}
           />
         </div>
       </main>
