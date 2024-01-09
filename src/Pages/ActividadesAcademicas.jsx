@@ -23,6 +23,7 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$3000"
             courseIncriptionNoPartners="$4000"
+            link={imgCourse2}
           />
           <Course
             courseImg={imgCourse1}
@@ -31,6 +32,7 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$5000"
             courseIncriptionNoPartners="$7000"
+            link={imgCourse1}
           />
           <Course
             courseImg={imgCourse3}
@@ -39,6 +41,7 @@ function ActividadesAcademicas() {
             courseModality="Presencial"
             courseIncriptionPartners="$5000"
             courseIncriptionNoPartners="$7000"
+            link={imgCourse3}
           />
           <Course
             courseImg={imgCourse4}
@@ -47,6 +50,7 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$4000"
             courseIncriptionNoPartners="$5000"
+            link={imgCourse4}
           />
           <Course
             courseImg={imgCourse5}
@@ -55,6 +59,7 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$2000"
             courseIncriptionNoPartners="$3000"
+            link={imgCourse5}
           />
           <Course
             courseImg={imgCourse6}
@@ -63,6 +68,7 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$14.000"
             courseIncriptionNoPartners="$22.000"
+            link={imgCourse6}
           />
           <Course
             courseImg={imgCourse7}
@@ -71,7 +77,7 @@ function ActividadesAcademicas() {
             courseModality="Virtual"
             courseIncriptionPartners="$6.500"
             courseIncriptionNoPartners="$7500"
-            pdf={process.env.PUBLIC_URL + "/actividades-course7.pdf"}
+            link={process.env.PUBLIC_URL + "/actividades-course7.pdf"}
           />
         </div>
       </main>

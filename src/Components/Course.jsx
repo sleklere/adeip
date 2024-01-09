@@ -18,7 +18,7 @@ function Course(props) {
           <p>Inscripción No Socios: {props.courseIncriptionNoPartners}</p>
         </div>
         <div className={styles["btn-curso-container"]}>
-          <a href={props.pdf} target="_blank" rel="noreferrer">
+          <a href={props.link} target="_blank" rel="noreferrer">
             <button className={styles["btn-curso"]}>Mas Información</button>
           </a>
         </div>
