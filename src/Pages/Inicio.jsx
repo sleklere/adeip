@@ -71,6 +71,24 @@ function Inicio() {
             <Link
               to="https://drive.google.com/file/d/1BRhTPp51kUIM1adcNNmUpKmbnOtXFyMK"
               className={`${styles.btn} ${styles["btn-adeip-info"]}`}
+              target="_blank"
+            >
+              Ver Entrevista
+            </Link>
+          </div>
+          <div className={styles.row}>
+            <h3 className={styles["heading-tertiary"]}>
+              Entrevista a Marta Dragotta
+            </h3>
+            <p>
+              Evaluación psicológica y tránsito. Fragmento de una entrevista
+              televisiva realizada el 9 de enero de 2024 a la Dra.
+              Marta Dragotta
+            </p>
+            <Link
+              to="entrevista-dragotta.mp4"
+              className={`${styles.btn} ${styles["btn-adeip-info"]}`}
+              target="_blank"
             >
               Ver Entrevista
             </Link>
