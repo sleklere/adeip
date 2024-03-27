@@ -8,6 +8,7 @@ import imgCourse4 from "../Assets/actividadesAcademicas/course4.jpeg";
 import imgCourse5 from "../Assets/actividadesAcademicas/course5.jpg";
 import imgCourse6 from "../Assets/actividadesAcademicas/course6.jpg";
 import imgCourse7 from "../Assets/actividadesAcademicas/course7.jpg";
+import imgCourse8 from "../Assets/actividadesAcademicas/course8.jpg";
 
 function ActividadesAcademicas() {
   return (
@@ -78,6 +79,15 @@ function ActividadesAcademicas() {
             courseIncriptionPartners="$6.500"
             courseIncriptionNoPartners="$7500"
             link={process.env.PUBLIC_URL + "/actividades-course7.pdf"}
+          />
+          <Course
+            courseImg={imgCourse8}
+            courseName="Sistema comprehensivo de Rorschach"
+            courseDate="13/04 - 27/4"
+            courseModality="Virtual"
+            courseIncriptionPartners="$15.000"
+            courseIncriptionNoPartners="$20.000"
+            link={process.env.PUBLIC_URL + "/curso-rorschach-5.pdf"}
           />
         </div>
       </main>

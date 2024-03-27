@@ -12,7 +12,7 @@ function Course(props) {
         {/* <p className={styles["ubicacion-curso"]}>{props.courseUbication}</p> */}
         <h2 className={styles["nombre-curso"]}>{props.courseName}</h2>
         <div className={styles["info-curso-container"]}>
-          <p>Fecha: {props.courseDate}</p>
+          <p>Fechas: {props.courseDate}</p>
           <p>Modalidad: {props.courseModality}</p>
           <p>Inscripción Socios: {props.courseIncriptionPartners}</p>
           <p>Inscripción No Socios: {props.courseIncriptionNoPartners}</p>
