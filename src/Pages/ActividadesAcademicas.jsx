@@ -9,6 +9,7 @@ import imgCourse5 from "../Assets/actividadesAcademicas/course5.jpg";
 import imgCourse6 from "../Assets/actividadesAcademicas/course6.jpg";
 import imgCourse7 from "../Assets/actividadesAcademicas/course7.jpg";
 import imgCourse8 from "../Assets/actividadesAcademicas/course8.jpg";
+import imgCourse9 from "../Assets/actividadesAcademicas/course9.jpg";
 
 function ActividadesAcademicas() {
   return (
@@ -88,6 +89,15 @@ function ActividadesAcademicas() {
             courseIncriptionPartners="$15.000"
             courseIncriptionNoPartners="$20.000"
             link={process.env.PUBLIC_URL + "/curso-rorschach-5.pdf"}
+          />
+          <Course
+            courseImg={imgCourse9}
+            courseName="Sistema comprehensivo John Exner"
+            courseDate="13/04"
+            courseModality="Virtual"
+            courseIncriptionPartners="$15.000"
+            courseIncriptionNoPartners="$20.000"
+            link={imgCourse9}
           />
         </div>
       </main>

@@ -3,7 +3,7 @@
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10rem;
+  margin-bottom: 14rem;
 }
 
 .main-actividades {
@@ -54,7 +54,7 @@
 
 @media (max-width: 1280px) {
   .container {
-    margin-bottom: 25rem;
+    margin-bottom: 34rem;
   }
 
   .cursos-container {
@@ -64,7 +64,7 @@
 
 @media (max-width: 800px) {
   .container {
-    margin-bottom: 28rem;
+    margin-bottom: 40rem;
   }
 
   .cursos-container {
