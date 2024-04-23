@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import NextCongress from "../Assets/congress-2023-adeip.png";
+import NextCongress from "../Assets/congress-2024-adeip.jpg";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import styles from "./Inicio.module.css";
 import backgroundImage from "../Assets/home-2.avif";
@@ -16,7 +16,8 @@ function Inicio() {
         image={backgroundImage}
       />
       <section className={styles["section-associate"]}>
-        <div className={styles.row}>
+        {/* <div className={styles.row}> */}
+        <div className={`${styles.row} ${styles["first-row"]}`}>
           <h2 className={styles["heading-secondary"]}>Sea miembro de ADEIP</h2>
           <Link to="/formulario-miembro" className={styles["btn-associate"]}>
             Asóciese
@@ -45,10 +46,13 @@ function Inicio() {
             <h3 className={styles["heading-tertiary"]}>Próximo Congreso</h3>
             <img src={NextCongress} alt="Próximo Congreso" />
             <Link
-              to="http://www.linktr.ee/adeiplaplata"
+              // to="http://www.linktr.ee/adeiplaplata"
+              to="/info-congreso2024.pdf"
+              target="_blank"
+              rel="noreferrer"
               className={`${styles.btn} ${styles["btn-info-congreso"]}`}
             >
-              Más Info
+              Más Información
             </Link>
             <Link
               to="/congresos"

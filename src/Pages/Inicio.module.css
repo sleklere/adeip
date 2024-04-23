@@ -26,7 +26,11 @@
   max-width: 114rem;
   margin: 0 auto;
   text-align: center;
-  /* margin-bottom: 4.8rem; */
+  margin-bottom: 4.8rem;
+}
+
+.first-row {
+  margin-bottom: 0;
 }
 
 .row p {
@@ -38,8 +42,8 @@
 .section-history,
 .section-interview,
 .section-congress {
-  padding: 2rem 0;
-  margin-bottom: 2.4rem;
+  padding: 1rem 0;
+  /* margin-bottom: 2.4rem; */
 }
 
 .section-congress img {
