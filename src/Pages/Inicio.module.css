@@ -48,6 +48,7 @@
 
 .section-congress img {
   padding: 3rem;
+  width: 43rem;
 }
 
 .btn-associate:link,
@@ -102,9 +103,18 @@
 /**/
 
 /* Media Queries */
+@media (max-width: 1024px) {
+  .section-congress img {
+    /* height: 35rem; */
+    width: 38.4rem;
+    width: 34rem;
+  }
+}
+
 @media (max-width: 600px) {
   .section-congress img {
-    height: 35rem;
+    /* height: 35rem; */
+    width: 34rem;
   }
 }
 

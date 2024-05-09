@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import NextCongress from "../Assets/congress-2024-adeip.jpg";
+import Conference from "../Assets/conferencia.jpeg";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import styles from "./Inicio.module.css";
 import backgroundImage from "../Assets/home-2.avif";
@@ -42,6 +43,18 @@ function Inicio() {
           </div>
         </section>
         <section className={styles["section-congress"]}>
+          <div className={`${styles.row} ${styles["display--flex-column"]}`}>
+            <h3 className={styles["heading-tertiary"]}>Próxima Conferencia</h3>
+            <img src={Conference} alt="Próximo Congreso" />
+            <Link
+              to={Conference}
+              target="_blank"
+              rel="noreferrer"
+              className={`${styles.btn} ${styles["btn-info-congreso"]}`}
+            >
+              Más Información
+            </Link>
+          </div>
           <div className={`${styles.row} ${styles["display--flex-column"]}`}>
             <h3 className={styles["heading-tertiary"]}>Próximo Congreso</h3>
             <img src={NextCongress} alt="Próximo Congreso" />
