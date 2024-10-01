@@ -18,6 +18,18 @@ function Congresos() {
             <div className={styles["congresses-timeline"]}>
               <div className={styles.congress}>
                 <p className={styles["congress-number"]}>
+                  XXVI Congreso Nacional de Psicodiagnóstico
+                </p>
+                <p className={styles["congress-name"]}>
+                  “Avances en la evaluación psicológica. Experiencia clínica,
+                  nuevas tecnologías e investigación sistemática”
+                </p>
+                <p className={styles["congress-date"]}>
+                  Santiago del Estero, 2024
+                </p>
+              </div>
+              <div className={styles.congress}>
+                <p className={styles["congress-number"]}>
                   XXV Congreso Nacional de Psicodiagnóstico
                 </p>
                 <p className={styles["congress-name"]}>

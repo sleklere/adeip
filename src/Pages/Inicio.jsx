@@ -56,7 +56,7 @@ function Inicio() {
             </Link>
           </div>
           <div className={`${styles.row} ${styles["display--flex-column"]}`}>
-            <h3 className={styles["heading-tertiary"]}>Próximo Congreso</h3>
+            {/* <h3 className={styles["heading-tertiary"]}>Próximo Congreso</h3>
             <img src={NextCongress} alt="Próximo Congreso" />
             <Link
               // to="http://www.linktr.ee/adeiplaplata"
@@ -66,7 +66,7 @@ function Inicio() {
               className={`${styles.btn} ${styles["btn-info-congreso"]}`}
             >
               Más Información
-            </Link>
+            </Link> */}
             <Link
               to="/congresos"
               className={`${styles.btn} ${styles["btn-contact"]}`}
