@@ -44,7 +44,7 @@ function Inicio() {
         </section>
         <section className={styles["section-congress"]}>
           <div className={`${styles.row} ${styles["display--flex-column"]}`}>
-            <h3 className={styles["heading-tertiary"]}>Próxima Conferencia</h3>
+            <h3 className={styles["heading-tertiary"]}>Próxima actividad</h3>
             <img src={Conference} alt="Próximo Congreso" />
             <Link
               to={Conference}
