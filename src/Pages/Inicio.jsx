@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import NextCongress from "../Assets/congress-2024-adeip.jpg";
-import Conference from "../Assets/conferencia.jpeg";
+import Conference from "../Assets/panelCuestionario.jpeg";
 import PageLayoutTop from "../Components/PageLayoutTop";
 import styles from "./Inicio.module.css";
 import backgroundImage from "../Assets/home-2.avif";
@@ -75,7 +75,7 @@ function Inicio() {
             </Link>
           </div>
         </section>
-        <section className={styles["section-interview"]}>
+        {/* <section className={styles["section-interview"]}>
           <div className={styles.row}>
             <h3 className={styles["heading-tertiary"]}>
               Entrevista a Cristina Weigle
@@ -110,7 +110,7 @@ function Inicio() {
               Ver Entrevista
             </Link>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );
